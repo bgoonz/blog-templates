@@ -1,0 +1,7 @@
+---
+9.1.0 cucumber-messages:>= 9.0.3&~> 9.0|checksum:43d8f0f0eebcc76fa9f853d4c5df87fd38afdb160870c3f2f14528441b035b5e,ruby:>= 2.3
+9.2.0 cucumber-messages:>= 9.0.3&~> 9.0|checksum:ce17cd465b25b0e2a625954dd1cd9d22c4c7ec9eef8c36440d6e7a36cecc1243,ruby:>= 2.3
+10.0.0 cucumber-messages:>= 10.0.1&~> 10.0|checksum:d1e65cfb05ea61db26cd9965f83a70328d346dd8f36866f07b9b2c89948f39ae,ruby:>= 2.3
+11.0.0 cucumber-messages:>= 10.0.1&~> 10.0|checksum:f1f3f72f8322afe43f4bfa6552c4bdf8314ca4052bde76038420456ff76b915e,ruby:>= 2.3
+12.0.0 cucumber-messages:>= 11.1.1&~> 11.1|checksum:5aa6e2b501b82d25b06de8f3e0427cf0b34e7b7b6aa895d1cac473789f9e1ea1,ruby:>= 2.3
+13.0.0 cucumber-messages:>= 12.0.0&~> 12.0|checksum:42e978d42dd0c7e04083f60597166882e6a9e98df9bd310b7cd758e9520d341f,ruby:>= 2.3

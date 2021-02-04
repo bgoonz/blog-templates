@@ -1,0 +1,38 @@
+---
+0.1.0 octokit:~> 3.3|checksum:7ca8b40a58bf758bcc3a4c8d8ae56292997fd8ed0a3da8e9beab33188a44d6af
+1.0.0 octokit:~> 4.0|checksum:e38e6da6890dfceaf798a07009d913456a1f1f9390af2d335525129ca92d4aa9
+1.1.0 octokit:~> 4.0|checksum:a6f2d20369bec216ca10aaf6f6f5526c11c8307924edcf9cf49d95b66cd79a42
+1.2.0 octokit:~> 4.0|checksum:5ab99ee2a74a32f03adac77ea6f26212d859ad062503be95b1a5a826f9266801
+1.3.0 octokit:~> 4.0|checksum:7756ab19521e7e223ce0ed4917729b6c98bb54f139e0ea4bd6c61398817c6772
+1.4.0 octokit:~> 4.0|checksum:0f0e051aaa94362a26e7d85c6935da85d9101128f761063c75ab06e913eb3f7d
+1.5.0 octokit:~> 4.0|checksum:32cf7d4ed8580910b4726a91d17343ae8b7b9f28fb360cde62747d17d2dc38c9
+1.6.0 octokit:~> 4.0|checksum:647b3ec12df907e8d8f6d2404c91f2ee479bb50d10f7183ca3568ad7d7ce5a6c
+1.7.0 octokit:~> 4.0|checksum:d3c6652d5a2937100778448fdff8a9cfa130363f807085299e5e3542f2b6600f
+1.8.0 octokit:~> 4.0|checksum:86a1f968a4b5600dc61ac05852f106577cbd4df863c59f118fb100ae66a09e07
+1.9.0 octokit:~> 4.0|checksum:3bd742d6f82d90bc04d2d356f6007712bb0ccc86b456b4f00dfe840de250cc6a
+1.10.0 octokit:~> 4.0|checksum:6981618525f59d01b4a60e22f2a6d7022c9d21be39883ec29a056c7ce4b2a24f
+1.11.0 octokit:~> 4.0|checksum:43f13e3dd89f169c8047f7f6d2e248d5040b0fa7e6eb8be7cb6f35790c894d81
+1.11.1 octokit:~> 4.0|checksum:860a8f6f517f9984d694667ab4058449ebac8874e74284e53bd251839562042e
+2.0.0 jekyll:~> 3.1,octokit:~> 4.0|checksum:966d0b4418c7169eca048a7178a2d5d7664ec82175234b7a7326b35c71e491d1
+2.0.1 jekyll:~> 3.1,octokit:~> 4.0|checksum:e509dbf3443e13b410a6d109378e3b41e1d84bff540a30b36b4fe067c437a5c5
+2.0.2 jekyll:~> 3.1,octokit:~> 4.0|checksum:12168823d032597f3bbed2986e4094bc498c4176dd821f2dc445101697d35d5f
+2.1.0 jekyll:~> 3.1,octokit:~> 4.0|checksum:1296808de12e761e8f47cca67cf0e6fa2146eaab986838b50b8c4e7a4ecc88f2
+2.1.1 jekyll:~> 3.1,octokit:~> 4.0|checksum:da346621357fb842d3c7b647168b29ee27802af5b5d13d67c0c895b265146def
+2.2.0 jekyll:~> 3.1,octokit:!= 4.4.0&~> 4.0|checksum:f2696b4d297e9e11530a61697cd44d10c5d8bdcb04d18d37fc709d91f716de53
+2.3.0 jekyll:~> 3.1,octokit:!= 4.4.0&~> 4.0|checksum:3d8cfb538aec8831a6c92df3f05742e0972ea480b49f33cb578a70849c6e9567
+2.3.1 jekyll:~> 3.1,octokit:!= 4.4.0&~> 4.0|checksum:5aee1971f980fefe111899c8ab583189f541948cb1e3e896aab84a6bfeb1586e
+2.4.0 jekyll:~> 3.1,octokit:!= 4.4.0&~> 4.0|checksum:ba234940161fb9a398fe9019a2111cef1e453f598a6c6224eed915a4d608e9ef
+2.5.0 jekyll:~> 3.1,octokit:!= 4.4.0&~> 4.0|checksum:51d3f47ec5fc7db08c0dd48cd02ebb693bdf875118e5cef7c0a7835d87ee86e3
+2.5.1 jekyll:~> 3.1,octokit:!= 4.4.0&~> 4.0|checksum:7bc94d26e311a2be0154b5135ec55af55dd7e1ef4aef18e065c1031479906e75
+2.6.0 jekyll:~> 3.1,octokit:!= 4.4.0&~> 4.0|checksum:da968642c27748a48cdaf8167b8b6f86dbbb6063a24b196b314707075b1fb84f
+2.7.0 jekyll:~> 3.1,octokit:!= 4.4.0&~> 4.0|checksum:9f82440535c67949997beebaabfd5e56855c7b03dfc524257ab3c9fddd061079
+2.8.0 jekyll:~> 3.1,octokit:!= 4.4.0&~> 4.0|checksum:7ea01376e9b722ef1f1b169e507e772f80c30a3b4c63bc1aabbd7dcf59c14ae4
+2.9.1 jekyll:~> 3.1,octokit:!= 4.4.0&~> 4.0|checksum:7e036d720ca6a4c7d26245f5314b538c0cce2c423ceb47d6fdcdaf9d8aea1202
+2.9.2 jekyll:~> 3.1,octokit:!= 4.4.0&~> 4.0|checksum:e15b4a4b3e03f7a6f7821cad14224aad706258fffd2b38c060d47c0d0c2b26a4
+2.9.3 jekyll:~> 3.1,octokit:!= 4.4.0&~> 4.0|checksum:f71bbda8ee6dec7c0abdfeb686de08733a8766e663aa5d77703c3ac3af948bf7
+2.9.4 jekyll:~> 3.1,octokit:!= 4.4.0&~> 4.0|checksum:e84f4bf7a8a9139ee2a6e997becf6ce48bab347c64f3780cf9bf8565ef2fb6c3
+2.10.0 jekyll:~> 3.4,octokit:!= 4.4.0&~> 4.0|checksum:5edbf431abe98ab6e568c8a8a60a83edc3a2c7187e668c77565c650d4b6d3596
+2.11.0 jekyll:~> 3.4,octokit:!= 4.4.0&~> 4.0|checksum:907203b3e6577f244c177dfd861d31d2aaefe7761cd42e4128ff7fc0451bb35c
+2.12.0 jekyll:~> 3.4,octokit:!= 4.4.0&~> 4.0|checksum:818ecab58ad99549c17cdf10eba1065e5b412201a93acba28a994dc9367eb5c8
+2.12.1 jekyll:~> 3.4,octokit:!= 4.4.0&~> 4.0|checksum:3744843c7e55b9e3a5fbf0478ef7e28a4433c92cb2388eeff1344ce52b5602c8
+2.13.0 jekyll:< 5.0&>= 3.4,octokit:!= 4.4.0&~> 4.0|checksum:81574c589d4ffbabb32d2961fee444211ee2ff1fd7d35eeec477348f493e9564

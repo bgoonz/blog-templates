@@ -1,0 +1,15 @@
+---
+0.1.0 jekyll:~> 3.3|checksum:4529e008fab96582eb645a43642d5dc07dee1f306fb456c2453e37b6e20988af
+0.1.1 jekyll:~> 3.3|checksum:1caa8bb2a424f2e43c6fd082eed6ece170fccf474b53ba5542b22273b6611d1b
+0.1.2 jekyll:~> 3.3|checksum:9686354f17fddd6f2f414abdb5cf46f6db00fe3cfd490d99d9715dc7e4613398
+0.2.0 jekyll:~> 3.3|checksum:9fa08b467e377f9b1b487ca138850f6c1fc6cf7c25ff4cb9a581210517fa2509
+0.2.1 jekyll:~> 3.3|checksum:144a28d4f07de94eb590bf4a3a33f1bc7e786f7c5ae927d9dbfcb77f451dfe89
+0.3.0 jekyll:~> 3.3|checksum:c6393677f68493e2480c5d0cbbc77fda4eab64c6870fada5e5a766bc445152db
+0.4.0 jekyll:~> 3.3|checksum:c3d50a68bbf85511c03f1ce46efeaab38a11efcbab9da2f166f178ea5a966edf
+0.4.1 jekyll:~> 3.3|checksum:4cb409567135de77aea35ebc540b86f5ef04b881441e96618f7cc877318179c8
+0.5.0 jekyll:~> 3.3|checksum:2f39e5d0cdfde1c5da8e416ece5a8d84695636b4ebc6e017ceabb7527f3de32b
+0.5.1 jekyll:~> 3.3|checksum:88368be1cb95cd4b25f616dea1867f58b6b79b23de3b532a072adf3afdcfde46
+0.5.2 jekyll:~> 3.3|checksum:9524c7f32df8ead06fd0261a6eac133031ec32cbb743ce675400347c88e45b99
+0.5.3 jekyll:~> 3.3|checksum:aae4d9c3a30c7ba62a2fc0611e4e76e61b23737cf7e61175bf3614f960ed6324
+0.6.0 jekyll:~> 3.3|checksum:a59be3ddff1aaddba1b37a6a9dc3d5201a4cc5ee7647b087b8228291f34d2cb7
+0.6.1 jekyll:< 5.0&>= 3.3|checksum:d11301f57b39e94b6c04fff2a3b145fe2f6a27be631a403e2542fa2e1548dd6d

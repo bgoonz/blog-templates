@@ -1,0 +1,20 @@
+current directory: /app/.local/gems/gems/eventmachine-1.2.7/ext/fastfilereader
+/usr/bin/ruby2.3 -r ./siteconf20190130-307-5maq19.rb extconf.rb
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /app/.local/gems/extensions/x86_64-linux/2.3.0/eventmachine-1.2.7/mkmf.log
+
+current directory: /app/.local/gems/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /app/.local/gems/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.so
+
+current directory: /app/.local/gems/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20190130-307-ee2bu2

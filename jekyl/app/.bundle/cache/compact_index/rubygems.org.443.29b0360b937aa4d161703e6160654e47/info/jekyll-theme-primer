@@ -1,0 +1,18 @@
+---
+0.1.1 jekyll:~> 3.3|checksum:e85cc574992dfd80637f679d1971a36080ae701e24090370a6fcf07e8bb6c1e5
+0.1.2 jekyll:~> 3.3|checksum:d017eec9ae1a08648937de9f36b8881b0eef659c216be9719650778ff177a2ee
+0.1.3 jekyll:~> 3.3|checksum:961ab2d96835b1afc73d858f61750db2cad906636aa014f86868a3b6ed08f454
+0.1.4 jekyll:~> 3.3|checksum:d1c228d3a8f3ed963ed7e4208f5669e45b11af740d2a91aafc6b4b05a9d2a533
+0.1.5 jekyll:~> 3.3|checksum:b89ea24c597691fda274124c8ea995001c81673b4682805b41054aaf4b2f1ee4
+0.1.6 jekyll:~> 3.3|checksum:093eabcce542ca204421c79680cbd3d16411c4aad8fe3ab8805204abdf2cb7ca
+0.1.7 jekyll:~> 3.3|checksum:641f3f02d7f5c2e69fea96b4ba0dd3450c61658ed7018cb70a8571acec779ce9
+0.1.8 jekyll:~> 3.3|checksum:c5954fb6ce3da7d419a6926e66a17a38597c1d51fde25492ca4ed202b2a134df
+0.2.1 jekyll:~> 3.3|checksum:a4ee108267a2ceb15863ed57a236a4404eacdff72f8c726c1d4a1e6d785f96c8
+0.3.0 jekyll:~> 3.3|checksum:2c8d23029ec21751c3a98414749e1604cdcb8477c6c80e7960fbc3532eaf6eab
+0.3.1 jekyll:~> 3.3|checksum:f107ea055839c0628fbbc59a555c99bfce7a1d113d70be7ed56e3f898a394969
+0.4.0 jekyll:~> 3.5,jekyll-seo-tag:~> 2.2|checksum:60d51af60fcc1d911049f6622096bfdb25a96b015744064bd1348d69ea172f5e
+0.5.0 jekyll:~> 3.5,jekyll-seo-tag:~> 2.2|checksum:d98d242b831cee52f372393eb109aedb0ffcbd03f778484c6ff397ccabd2b166
+0.5.1 jekyll:~> 3.5,jekyll-seo-tag:~> 2.2|checksum:2c8c48e845bfdb408360fabd4132df6502a901183edb2b27f6f63fbf8543ec2c
+0.5.2 jekyll:~> 3.5,jekyll-github-metadata:~> 2.9,jekyll-seo-tag:~> 2.2|checksum:a8d3c47d19287ed745546f0161f5242f5fb57c3d271aaa4e9f4bdfc8a6f9369e
+0.5.3 jekyll:~> 3.5,jekyll-github-metadata:~> 2.9,jekyll-seo-tag:~> 2.0|checksum:b89e1e5b3b66825f96ac2692e0bd86d1f45effd04282e4f971b29d9ffa79df05
+0.5.4 jekyll:< 5.0&> 3.5,jekyll-github-metadata:~> 2.9,jekyll-seo-tag:~> 2.0|checksum:33c10aa173189e7b0470698b83c667bcc9a4795ef48ebfafb47fe43ad218f730

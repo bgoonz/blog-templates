@@ -1,0 +1,4 @@
+---
+0.0.1 parser:>= 2.7.0.1|checksum:39270d3310cd0f67e02881313300d55669ad2145cfbc1de56fdee7d0f7e0d789,ruby:>= 2.3.0
+0.0.2 parser:>= 2.7.0.1|checksum:b39d6d98a47f0f1a43f647e0a816ec1a2aba707859dfe0cd8f0c34b55e26ae4c,ruby:>= 2.3.0
+0.0.3 parser:>= 2.7.0.1|checksum:b02104caa29967e281a5625a8ffc8599e07b2dd803fb714dabac201f744c7a51,ruby:>= 2.3.0
