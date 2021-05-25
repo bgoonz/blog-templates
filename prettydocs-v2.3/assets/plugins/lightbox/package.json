@@ -27,7 +27,7 @@
     "start": "NODE_ENV=development webpack-serve --open --no-clipboard --content ./ --config webpack.config.js --hot --colors --inline"
   },
   "devDependencies": {
-    "autoprefixer": "^6.4.0",
+    "autoprefixer": "6.7.7",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
