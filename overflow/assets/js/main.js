@@ -4,16 +4,17 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-(function ($) {
-  var $window = $(window),
-    $body = $("body"),
-    settings = {
-      // Parallax background effect?
-      parallax: true,
+($ => {
+  var $window = $(window);
+  var $body = $("body");
 
-      // Parallax factor (lower = more intense, higher = less intense).
-      parallaxFactor: 10,
-    };
+  var settings = {
+    // Parallax background effect?
+    parallax: true,
+
+    // Parallax factor (lower = more intense, higher = less intense).
+    parallaxFactor: 10,
+  };
 
   // Breakpoints.
   breakpoints({
@@ -27,8 +28,8 @@
   if (browser.mobile) $body.addClass("is-scroll");
 
   // Play initial animations on page load.
-  $window.on("load", function () {
-    window.setTimeout(function () {
+  $window.on("load", () => {
+    window.setTimeout(() => {
       $body.removeClass("is-preload");
     }, 100);
   });
@@ -41,7 +42,7 @@
 
   $(".scrolly").scrolly({
     speed: 1000,
-    offset: function () {
+    offset() {
       return breakpoints.active("<=mobile") ? 70 : 190;
     },
   });
@@ -53,20 +54,18 @@
     settings.parallax = false;
 
   if (settings.parallax) {
-    var $dummy = $(),
-      $bg;
+    var $dummy = $();
+    var $bg;
 
     $window
-      .on("scroll.overflow_parallax", function () {
+      .on("scroll.overflow_parallax", () => {
         // Adjust background position.
         $bg.css(
           "background-position",
-          "center " +
-            -1 * (parseInt($window.scrollTop()) / settings.parallaxFactor) +
-            "px"
+          `center ${-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)}px`
         );
       })
-      .on("resize.overflow_parallax", function () {
+      .on("resize.overflow_parallax", () => {
         // If we're in a situation where we need to temporarily disable parallax, do so.
         if (breakpoints.active("<=narrow")) {
           $body.css("background-position", "");
