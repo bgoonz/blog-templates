@@ -1,7 +1,7 @@
 // Your application code
 
 // This app evaluates if user's browser support ServiceWorker or not, and change message on the page.
-(function () {
+(() => {
   var $msg = document.getElementById("msg");
   var $guide = document.getElementById("guide");
   if (navigator.serviceWorker) {

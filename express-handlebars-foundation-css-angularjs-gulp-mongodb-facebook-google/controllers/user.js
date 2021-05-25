@@ -45,15 +45,13 @@ exports.loginPost = function (req, res, next) {
 
   User.findOne({ email: req.body.email }, function (err, user) {
     if (!user) {
-      return res
-        .status(401)
-        .send({
-          msg:
-            "The email address " +
-            req.body.email +
-            " is not associated with any account. " +
-            "Double-check your email address and try again.",
-        });
+      return res.status(401).send({
+        msg:
+          "The email address " +
+          req.body.email +
+          " is not associated with any account. " +
+          "Double-check your email address and try again.",
+      });
     }
     user.comparePassword(req.body.password, function (err, isMatch) {
       if (!isMatch) {
@@ -82,11 +80,9 @@ exports.signupPost = function (req, res, next) {
 
   User.findOne({ email: req.body.email }, function (err, user) {
     if (user) {
-      return res
-        .status(400)
-        .send({
-          msg: "The email address you have entered is already associated with another account.",
-        });
+      return res.status(400).send({
+        msg: "The email address you have entered is already associated with another account.",
+      });
     }
     user = new User({
       name: req.body.name,
@@ -135,11 +131,9 @@ exports.accountPut = function (req, res, next) {
       if ("password" in req.body) {
         res.send({ msg: "Your password has been changed." });
       } else if (err && err.code === 11000) {
-        res
-          .status(409)
-          .send({
-            msg: "The email address you have entered is already associated with another account.",
-          });
+        res.status(409).send({
+          msg: "The email address you have entered is already associated with another account.",
+        });
       } else {
         res.send({
           user: user,
@@ -210,14 +204,12 @@ exports.forgotPost = function (req, res, next) {
     function (token, done) {
       User.findOne({ email: req.body.email }, function (err, user) {
         if (!user) {
-          return res
-            .status(400)
-            .send({
-              msg:
-                "The email address " +
-                req.body.email +
-                " is not associated with any account.",
-            });
+          return res.status(400).send({
+            msg:
+              "The email address " +
+              req.body.email +
+              " is not associated with any account.",
+          });
         }
         user.passwordResetToken = token;
         user.passwordResetExpires = Date.now() + 3600000; // expire in 1 hour
@@ -357,11 +349,9 @@ exports.authFacebook = function (req, res) {
           if (req.isAuthenticated()) {
             User.findOne({ facebook: profile.id }, function (err, user) {
               if (user) {
-                return res
-                  .status(409)
-                  .send({
-                    msg: "There is already an existing account linked with Facebook that belongs to you.",
-                  });
+                return res.status(409).send({
+                  msg: "There is already an existing account linked with Facebook that belongs to you.",
+                });
               }
               user = req.user;
               user.name = user.name || profile.name;
@@ -384,13 +374,11 @@ exports.authFacebook = function (req, res) {
               }
               User.findOne({ email: profile.email }, function (err, user) {
                 if (user) {
-                  return res
-                    .status(400)
-                    .send({
-                      msg:
-                        user.email +
-                        " is already associated with another account.",
-                    });
+                  return res.status(400).send({
+                    msg:
+                      user.email +
+                      " is already associated with another account.",
+                  });
                 }
                 user = new User({
                   name: profile.name,
@@ -454,11 +442,9 @@ exports.authGoogle = function (req, res) {
           if (req.isAuthenticated()) {
             User.findOne({ google: profile.sub }, function (err, user) {
               if (user) {
-                return res
-                  .status(409)
-                  .send({
-                    msg: "There is already an existing account linked with Google that belongs to you.",
-                  });
+                return res.status(409).send({
+                  msg: "There is already an existing account linked with Google that belongs to you.",
+                });
               }
               user = req.user;
               user.name = user.name || profile.name;

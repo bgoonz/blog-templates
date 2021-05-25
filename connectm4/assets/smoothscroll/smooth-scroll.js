@@ -112,13 +112,12 @@
     if (top != self) {
       isFrame = true;
     } else if (
-
-    /**
-     * Safari 10 fixed it, Chrome fixed it in v45:
-     * This fixes a bug where the areas left and right to
-     * the content does not trigger the onmousewheel event
-     * on some pages. e.g.: html, body { height: 100% }
-     */
+      /**
+       * Safari 10 fixed it, Chrome fixed it in v45:
+       * This fixes a bug where the areas left and right to
+       * the content does not trigger the onmousewheel event
+       * on some pages. e.g.: html, body { height: 100% }
+       */
       isOldSafari &&
       scrollHeight > windowHeight &&
       (body.offsetHeight <= windowHeight || html.offsetHeight <= windowHeight)

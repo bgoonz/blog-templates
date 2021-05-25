@@ -45,15 +45,13 @@ exports.loginPost = function (req, res, next) {
 
   new User({ email: req.body.email }).fetch().then(function (user) {
     if (!user) {
-      return res
-        .status(401)
-        .send({
-          msg:
-            "The email address " +
-            req.body.email +
-            " is not associated with any account. " +
-            "Double-check your email address and try again.",
-        });
+      return res.status(401).send({
+        msg:
+          "The email address " +
+          req.body.email +
+          " is not associated with any account. " +
+          "Double-check your email address and try again.",
+      });
     }
     user.comparePassword(req.body.password, function (err, isMatch) {
       if (!isMatch) {
@@ -91,11 +89,9 @@ exports.signupPost = function (req, res, next) {
     })
     .catch(function (err) {
       if (err.code === "ER_DUP_ENTRY") {
-        return res
-          .status(400)
-          .send({
-            msg: "The email address you have entered is already associated with another account.",
-          });
+        return res.status(400).send({
+          msg: "The email address you have entered is already associated with another account.",
+        });
       }
     });
 };
@@ -151,11 +147,9 @@ exports.accountPut = function (req, res, next) {
     })
     .catch(function (err) {
       if (err.code === "ER_DUP_ENTRY") {
-        res
-          .status(409)
-          .send({
-            msg: "The email address you have entered is already associated with another account.",
-          });
+        res.status(409).send({
+          msg: "The email address you have entered is already associated with another account.",
+        });
       }
     });
 };
@@ -220,14 +214,12 @@ exports.forgotPost = function (req, res, next) {
     function (token, done) {
       new User({ email: req.body.email }).fetch().then(function (user) {
         if (!user) {
-          return res
-            .status(400)
-            .send({
-              msg:
-                "The email address " +
-                req.body.email +
-                " is not associated with any account.",
-            });
+          return res.status(400).send({
+            msg:
+              "The email address " +
+              req.body.email +
+              " is not associated with any account.",
+          });
         }
         user.set("passwordResetToken", token);
         user.set("passwordResetExpires", new Date(Date.now() + 3600000)); // expire in 1 hour
@@ -393,11 +385,9 @@ exports.authTwitter = function (req, res) {
             if (req.isAuthenticated()) {
               new User({ twitter: profile.id }).fetch().then(function (user) {
                 if (user) {
-                  return res
-                    .status(409)
-                    .send({
-                      msg: "There is already an existing account linked with Twitter that belongs to you.",
-                    });
+                  return res.status(409).send({
+                    msg: "There is already an existing account linked with Twitter that belongs to you.",
+                  });
                 }
                 user = req.user;
                 user.set("name", user.get("name") || profile.name);

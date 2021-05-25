@@ -1,7 +1,7 @@
 {
   "name": "blog-templates",
   "version": "1.0.0",
-  "description": "",
+  "description": "Run script:",
   "main": "index.js",
   "scripts": {
     "pretty": "prettier --write \"./**/*.{js,jsx,json}\"",
@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/bgoonz/blog-templates#readme",
   "dependencies": {
+    "lebab": "^3.1.1",
     "prettier": "^2.3.0"
-  }
+  },
+  "devDependencies": {}
 }

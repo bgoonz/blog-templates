@@ -8,10 +8,10 @@ console.log(navigator.geolocation);
 
 // Respond with cached resources
 // This is called everytime the browser requests resources from the server
-self.addEventListener("fetch", function (e) {
+self.addEventListener("fetch", e => {
   console.log("fetch request : " + e.request.url);
   e.respondWith(
-    caches.match(e.request).then(function (request) {
+    caches.match(e.request).then(request => {
       if (request) {
         // if cache is available, respond with cache
         console.log("responding with cache : " + e.request.url);
@@ -26,9 +26,9 @@ self.addEventListener("fetch", function (e) {
 });
 
 // Cache resources
-self.addEventListener("install", function (e) {
+self.addEventListener("install", e => {
   e.waitUntil(
-    caches.open(CACHE_NAME).then(function (cache) {
+    caches.open(CACHE_NAME).then(cache => {
       console.log("installing cache : " + CACHE_NAME);
       // cache everything listed on URLS list
       return cache.addAll(URLS);
@@ -37,12 +37,12 @@ self.addEventListener("install", function (e) {
 });
 
 // Delete outdated caches
-self.addEventListener("activate", function (e) {
+self.addEventListener("activate", e => {
   e.waitUntil(
-    caches.keys().then(function (keyList) {
+    caches.keys().then(keyList => {
       // `keyList` contains all cache names under appname.glitch.me domain
       return Promise.all(
-        keyList.map(function (key, i) {
+        keyList.map((key, i) => {
           if (keyList[i] !== CACHE_NAME) {
             console.log("deleting cache : " + keyList[i]);
             return caches.delete(keyList[i]);

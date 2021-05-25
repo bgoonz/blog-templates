@@ -14,7 +14,7 @@
  * @license
  * Dual licensed under the MIT and GPL licenses.
  */
-(function () {
+(() => {
   // CommonJS
   typeof require != "undefined"
     ? (SyntaxHighlighter = require("shCore").SyntaxHighlighter)
@@ -22,21 +22,24 @@
 
   function Brush() {
     function process(match, regexInfo) {
-      var constructor = SyntaxHighlighter.Match,
-        code = match[0],
-        tag = new XRegExp(
-          "(&lt;|<)[\\s\\/\\?]*(?<name>[:\\w-\\.]+)",
-          "xg"
-        ).exec(code),
-        result = [];
+      var constructor = SyntaxHighlighter.Match;
+      var code = match[0];
+
+      var tag = new XRegExp(
+        "(&lt;|<)[\\s\\/\\?]*(?<name>[:\\w-\\.]+)",
+        "xg"
+      ).exec(code);
+
+      var result = [];
       if (match.attributes != null) {
-        var attributes,
-          regex = new XRegExp(
-            "(?<name> [\\w:\\-\\.]+)" +
-              "\\s*=\\s*" +
-              "(?<value> \".*?\"|'.*?'|\\w+)",
-            "xg"
-          );
+        var attributes;
+
+        var regex = new XRegExp(
+          "(?<name> [\\w:\\-\\.]+)" +
+            "\\s*=\\s*" +
+            "(?<value> \".*?\"|'.*?'|\\w+)",
+          "xg"
+        );
 
         while ((attributes = regex.exec(code)) != null) {
           result.push(
