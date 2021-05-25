@@ -1,16 +1,17 @@
-angular.module('MyApp')
-  .controller('HeaderCtrl', function($scope, $location, $window, $auth) {
+angular
+  .module("MyApp")
+  .controller("HeaderCtrl", function ($scope, $location, $window, $auth) {
     $scope.isActive = function (viewLocation) {
       return viewLocation === $location.path();
     };
-    
-    $scope.isAuthenticated = function() {
+
+    $scope.isAuthenticated = function () {
       return $auth.isAuthenticated();
     };
-    
-    $scope.logout = function() {
+
+    $scope.logout = function () {
       $auth.logout();
       delete $window.localStorage.user;
-      $location.path('/');
+      $location.path("/");
     };
   });

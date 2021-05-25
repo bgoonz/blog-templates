@@ -260,9 +260,7 @@
     "request_path": "/with_\"stupid\"_quotes",
     "request_url": "/with_\"stupid\"_quotes?foo=\"bar\"",
     "num_headers": 0,
-    "headers": {
-
-    },
+    "headers": {},
     "body": "",
     "strict": true
   },
@@ -302,9 +300,7 @@
     "request_path": "/test.cgi",
     "request_url": "/test.cgi?foo=bar?baz",
     "num_headers": 0,
-    "headers": {
-
-    },
+    "headers": {},
     "body": "",
     "strict": true
   },
@@ -322,9 +318,7 @@
     "request_path": "/test",
     "request_url": "/test",
     "num_headers": 0,
-    "headers": {
-
-    },
+    "headers": {},
     "body": "",
     "strict": true
   },
@@ -391,9 +385,7 @@
     "request_path": "/test",
     "request_url": "/test",
     "num_headers": 0,
-    "headers": {
-
-    },
+    "headers": {},
     "body": "",
     "strict": true
   },
@@ -411,9 +403,7 @@
     "request_path": "/",
     "request_url": "/",
     "num_headers": 0,
-    "headers": {
-
-    },
+    "headers": {},
     "body": "",
     "strict": true
   },
@@ -474,9 +464,7 @@
     "request_path": "",
     "request_url": "http://hypnotoad.org?hail=all",
     "num_headers": 0,
-    "headers": {
-
-    },
+    "headers": {},
     "body": "",
     "strict": true
   },
@@ -495,9 +483,7 @@
     "request_url": "http://hypnotoad.org:1234?hail=all",
     "port": 1234,
     "num_headers": 0,
-    "headers": {
-
-    },
+    "headers": {},
     "body": "",
     "strict": true
   },
@@ -516,9 +502,7 @@
     "request_url": "http://hypnotoad.org:1234",
     "port": 1234,
     "num_headers": 0,
-    "headers": {
-
-    },
+    "headers": {},
     "body": "",
     "strict": true
   },

@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
   function getText(element) {
-    var ret = '';
+    var ret = "";
     var length = element.childNodes.length;
     for (var i = 0; i < length; i++) {
       var node = element.childNodes[i];
@@ -12,13 +12,13 @@ $(document).ready(function() {
   }
 
   function estimateReadingTime() {
-    var content = document.getElementById('js-post-content');
+    var content = document.getElementById("js-post-content");
     if (content) {
       var words = getText(content);
       var count = words.split(/\s+/).length;
-      var readTime = Math.ceil((count / 150));
-      var readTimeNode = document.createTextNode(readTime + ' min read');
-      document.getElementById('js-reading-time').appendChild(readTimeNode);
+      var readTime = Math.ceil(count / 150);
+      var readTimeNode = document.createTextNode(readTime + " min read");
+      document.getElementById("js-reading-time").appendChild(readTimeNode);
     }
   }
 

@@ -1,11 +1,11 @@
-var dotenv = require('dotenv');
+var dotenv = require("dotenv");
 
-dotenv.load({ path: '.env.example' });
+dotenv.load({ path: ".env.example" });
 
 module.exports = {
-  client: 'sqlite',
+  client: "sqlite",
   connection: {
-    filename: './dev.sqlite3'
+    filename: "./dev.sqlite3",
   },
-  useNullAsDefault: true
+  useNullAsDefault: true,
 };

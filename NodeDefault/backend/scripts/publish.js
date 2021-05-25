@@ -7,14 +7,12 @@ let publishFolder = "../publish";
 
 //Clean publish directory
 fs.readdirSync(publishFolder)
-  .filter(item => item !== "build")
-  .forEach(item => fse.removeSync(path.join(publishFolder, item)));
+  .filter((item) => item !== "build")
+  .forEach((item) => fse.removeSync(path.join(publishFolder, item)));
 
 //copy backend to publish folder
 const filterFunc = (src, dest) => {
-  let validFile =
-    src.indexOf("node_modules") < 0 &&
-    src.indexOf("scripts") < 0;
+  let validFile = src.indexOf("node_modules") < 0 && src.indexOf("scripts") < 0;
   return validFile;
 };
 

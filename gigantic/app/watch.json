@@ -1,15 +1,10 @@
 {
   "install": {
-    "include": [
-      "^package\\.json$"
-    ],
+    "include": ["^package\\.json$"],
     "exclude": []
   },
   "restart": {
-    "include": [
-      "^\\.env$",
-      "^webpack\\.config\\.js$"
-    ],
+    "include": ["^\\.env$", "^webpack\\.config\\.js$"],
     "exclude": []
   },
   "noSavedEvents": true

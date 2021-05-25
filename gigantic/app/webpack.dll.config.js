@@ -1,13 +1,13 @@
-const {DllPlugin} = require('webpack');
-const path = require('path');
+const { DllPlugin } = require("webpack");
+const path = require("path");
 
 // The "target" directory is hidden on glitch.com.
 const outputPath = path.join(__dirname, "target");
 
 module.exports = {
-  mode: 'development',
+  mode: "development",
   entry: {
-    components: ['./components.js']
+    components: ["./components.js"],
   },
 
   output: {
@@ -19,20 +19,20 @@ module.exports = {
   plugins: [
     new DllPlugin({
       context: __dirname,
-      name: '[name]',
-      path: path.join(outputPath, '[name].dll.manifest.json'),
+      name: "[name]",
+      path: path.join(outputPath, "[name].dll.manifest.json"),
     }),
   ],
   module: {
     rules: [
       {
         test: /\.js$/,
-        loader: 'babel-loader',
+        loader: "babel-loader",
         query: {
-          presets: ['es2015'],
-          plugins: ['transform-object-assign']
+          presets: ["es2015"],
+          plugins: ["transform-object-assign"],
         },
-      }
-    ]
-  }
+      },
+    ],
+  },
 };

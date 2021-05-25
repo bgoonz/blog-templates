@@ -1,4 +1,4 @@
 // Enter your theme name here!
-const themeName = '';
+const themeName = "";
 
 export default themeName;

@@ -1,12 +1,12 @@
-import React from 'react';
-import { connect } from 'react-redux'
-import { forgotPassword } from '../../actions/auth';
-import Messages from '../Messages';
+import React from "react";
+import { connect } from "react-redux";
+import { forgotPassword } from "../../actions/auth";
+import Messages from "../Messages";
 
 class Forgot extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { email: '' };
+    this.state = { email: "" };
   }
 
   handleChange(event) {
@@ -21,13 +21,24 @@ class Forgot extends React.Component {
   render() {
     return (
       <div className="container">
-        <Messages messages={this.props.messages}/>
+        <Messages messages={this.props.messages} />
         <form onSubmit={this.handleForgot.bind(this)}>
           <h4>Forgot Password</h4>
-          <p>Enter your email address below and we'll send you password reset instructions.</p>
+          <p>
+            Enter your email address below and we'll send you password reset
+            instructions.
+          </p>
           <label htmlFor="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Email" value={this.state.email} onChange={this.handleChange.bind(this)} autoFocus/>
-          <br/>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            value={this.state.email}
+            onChange={this.handleChange.bind(this)}
+            autoFocus
+          />
+          <br />
           <button type="submit">Reset Password</button>
         </form>
       </div>
@@ -37,7 +48,7 @@ class Forgot extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    messages: state.messages
+    messages: state.messages,
   };
 };
 
