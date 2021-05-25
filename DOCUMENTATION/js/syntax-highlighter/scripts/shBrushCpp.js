@@ -23,7 +23,7 @@
   function Brush() {
     // Copyright 2006 Shin, YoungJin
 
-    var datatypes =
+    const datatypes =
       "ATOM BOOL BOOLEAN BYTE CHAR COLORREF DWORD DWORDLONG DWORD_PTR " +
       "DWORD32 DWORD64 FLOAT HACCEL HALF_PTR HANDLE HBITMAP HBRUSH " +
       "HCOLORSPACE HCONV HCONVLIST HCURSOR HDC HDDEDATA HDESK HDROP HDWP " +
@@ -49,7 +49,7 @@
       "time_t __time64_t _timeb __timeb64 tm uintptr_t _utimbuf " +
       "va_list wchar_t wctrans_t wctype_t wint_t signed";
 
-    var keywords =
+    const keywords =
       "break case catch class const __finally __exception __try " +
       "const_cast continue private public protected __declspec " +
       "default delete deprecated dllexport dllimport do dynamic_cast " +
@@ -60,7 +60,7 @@
       "thread throw true false try typedef typeid typename union " +
       "using uuid virtual void volatile whcar_t while";
 
-    var functions =
+    const functions =
       "assert isalnum isalpha iscntrl isdigit isgraph islower isprint" +
       "ispunct isspace isupper isxdigit tolower toupper errno localeconv " +
       "setlocale acos asin atan atan2 ceil cos cosh exp fabs floor fmod " +

@@ -21,12 +21,12 @@
     : null;
 
   function Brush() {
-    var funcs =
+    const funcs =
       "abs avg case cast coalesce convert count current_timestamp " +
       "current_user day isnull left lower month nullif replace right " +
       "session_user space substring sum system_user upper user year";
 
-    var keywords =
+    const keywords =
       "absolute action add after alter as asc at authorization begin bigint " +
       "binary bit by cascade char character check checkpoint close collate " +
       "column commit committed connect connection constraint contains continue " +
@@ -45,7 +45,7 @@
       "translation trigger true truncate uncommitted union unique update values " +
       "varchar varying view when where with work";
 
-    var operators =
+    const operators =
       "all and any between cross in join like not null or outer some";
 
     this.regexList = [

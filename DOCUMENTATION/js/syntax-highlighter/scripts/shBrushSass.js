@@ -33,7 +33,7 @@
       return "\\b" + str.replace(/ /g, "(?!-)(?!:)\\b|\\b()") + ":\\b";
     }
 
-    var keywords =
+    const keywords =
       "ascent azimuth background-attachment background-color background-image background-position " +
       "background-repeat background baseline bbox border-collapse border-color border-spacing border-style border-top " +
       "border-right border-bottom border-left border-top-color border-right-color border-bottom-color border-left-color " +
@@ -49,7 +49,7 @@
       "table-layout text-align top text-decoration text-indent text-shadow text-transform unicode-bidi unicode-range units-per-em " +
       "vertical-align visibility voice-family volume white-space widows width widths word-spacing x-height z-index";
 
-    var values =
+    const values =
       "above absolute all always aqua armenian attr aural auto avoid baseline behind below bidi-override black blink block blue bold bolder " +
       "both bottom braille capitalize caption center center-left center-right circle close-quote code collapse compact condensed " +
       "continuous counter counters crop cross crosshair cursive dashed decimal decimal-leading-zero digits disc dotted double " +
@@ -65,14 +65,14 @@
       "text-bottom text-top thick thin top transparent tty tv ultra-condensed ultra-expanded underline upper-alpha uppercase upper-latin " +
       "upper-roman url visible wait white wider w-resize x-fast x-high x-large x-loud x-low x-slow x-small x-soft xx-large xx-small yellow";
 
-    var fonts =
+    const fonts =
       "[mM]onospace [tT]ahoma [vV]erdana [aA]rial [hH]elvetica [sS]ans-serif [sS]erif [cC]ourier mono sans serif";
 
-    var statements = "!important !default";
-    var preprocessor =
+    const statements = "!important !default";
+    const preprocessor =
       "@import @extend @debug @warn @if @for @while @mixin @include";
 
-    var r = SyntaxHighlighter.regexLib;
+    const r = SyntaxHighlighter.regexLib;
 
     this.regexList = [
       { regex: r.multiLineCComments, css: "comments" }, // multiline comments

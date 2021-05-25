@@ -24,13 +24,13 @@
     // Contributed by Andres Almiray
     // http://jroller.com/aalmiray/entry/nice_source_code_syntax_highlighter
 
-    var keywords =
+    const keywords =
       "as assert break case catch class continue def default do else extends finally " +
       "if in implements import instanceof interface new package property return switch " +
       "throw throws try while public protected private static";
-    var types = "void boolean byte char short int long float double";
-    var constants = "null";
-    var methods =
+    const types = "void boolean byte char short int long float double";
+    const constants = "null";
+    const methods =
       "allProperties count get size " +
       "collect each eachProperty eachPropertyName eachWithIndex find findAll " +
       "findIndexOf grep inject max min reverseEach sort " +

@@ -23,9 +23,9 @@
   function Brush() {
     // Created by Peter Atoria @ http://iAtoria.com
 
-    var inits = "class interface function package";
+    const inits = "class interface function package";
 
-    var keywords =
+    const keywords =
       "-Infinity ...rest Array as AS3 Boolean break case catch const continue Date decodeURI " +
       "decodeURIComponent default delete do dynamic each else encodeURI encodeURIComponent escape " +
       "extends false final finally flash_proxy for get if implements import in include Infinity " +

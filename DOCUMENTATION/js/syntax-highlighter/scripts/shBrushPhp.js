@@ -21,7 +21,7 @@
     : null;
 
   function Brush() {
-    var funcs =
+    const funcs =
       "abs acos acosh addcslashes addslashes " +
       "array_change_key_case array_chunk array_combine array_count_values array_diff " +
       "array_diff_assoc array_diff_key array_diff_uassoc array_diff_ukey array_fill " +
@@ -57,14 +57,14 @@
       "strpos strptime strrchr strrev strripos strrpos strspn strstr strtok strtolower strtotime " +
       "strtoupper strtr strval substr substr_compare";
 
-    var keywords =
+    const keywords =
       "abstract and array as break case catch cfunction class clone const continue declare default die do " +
       "else elseif enddeclare endfor endforeach endif endswitch endwhile extends final for foreach " +
       "function include include_once global goto if implements interface instanceof namespace new " +
       "old_function or private protected public return require require_once static switch " +
       "throw try use var while xor ";
 
-    var constants = "__FILE__ __LINE__ __METHOD__ __FUNCTION__ __CLASS__";
+    const constants = "__FILE__ __LINE__ __METHOD__ __FUNCTION__ __CLASS__";
 
     this.regexList = [
       {

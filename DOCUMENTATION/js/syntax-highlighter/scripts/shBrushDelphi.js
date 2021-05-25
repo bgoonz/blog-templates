@@ -21,7 +21,7 @@
     : null;
 
   function Brush() {
-    var keywords =
+    const keywords =
       "abs addr and ansichar ansistring array as asm begin boolean byte cardinal " +
       "case char class comp const constructor currency destructor div do double " +
       "downto else end except exports extended false file finalization finally " +

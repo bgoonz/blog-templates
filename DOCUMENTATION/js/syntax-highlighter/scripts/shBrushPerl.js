@@ -23,7 +23,7 @@
   function Brush() {
     // Contributed by David Simmons-Duffin and Marty Kube
 
-    var funcs =
+    const funcs =
       "abs accept alarm atan2 bind binmode chdir chmod chomp chop chown chr " +
       "chroot close closedir connect cos crypt defined delete each endgrent " +
       "endhostent endnetent endprotoent endpwent endservent eof exec exists " +
@@ -44,7 +44,7 @@
       "system syswrite tell telldir time times tr truncate uc ucfirst umask " +
       "undef unlink unpack unshift utime values vec wait waitpid warn write";
 
-    var keywords =
+    const keywords =
       "bless caller continue dbmclose dbmopen die do dump else elsif eval exit " +
       "for foreach goto if import last local my next no our package redo ref " +
       "require return sub tie tied unless untie until use wantarray while";

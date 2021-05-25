@@ -23,11 +23,11 @@
   function Brush() {
     // AppleScript brush by David Chambers
     // http://davidchambersdesign.com/
-    var keywords =
+    const keywords =
       "after before beginning continue copy each end every from return get global in local named of set some that the then times to where whose with without";
-    var ordinals =
+    const ordinals =
       "first second third fourth fifth sixth seventh eighth ninth tenth last front back middle";
-    var specials =
+    const specials =
       "activate add alias AppleScript ask attachment boolean class constant delete duplicate empty exists false id integer list make message modal modified new no paragraph pi properties quit real record remove rest result reveal reverse run running save string true word yes";
 
     this.regexList = [

@@ -22,19 +22,19 @@
 
   function Brush() {
     function process(match, regexInfo) {
-      var constructor = SyntaxHighlighter.Match;
-      var code = match[0];
+      const constructor = SyntaxHighlighter.Match;
+      const code = match[0];
 
-      var tag = new XRegExp(
+      const tag = new XRegExp(
         "(&lt;|<)[\\s\\/\\?]*(?<name>[:\\w-\\.]+)",
         "xg"
       ).exec(code);
 
-      var result = [];
+      const result = [];
       if (match.attributes != null) {
-        var attributes;
+        let attributes;
 
-        var regex = new XRegExp(
+        const regex = new XRegExp(
           "(?<name> [\\w:\\-\\.]+)" +
             "\\s*=\\s*" +
             "(?<value> \".*?\"|'.*?'|\\w+)",

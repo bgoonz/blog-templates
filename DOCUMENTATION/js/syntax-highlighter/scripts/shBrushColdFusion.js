@@ -24,7 +24,7 @@
     // Contributed by Jen
     // http://www.jensbits.com/2009/05/14/coldfusion-brush-for-syntaxhighlighter-plus
 
-    var funcs =
+    const funcs =
       "Abs ACos AddSOAPRequestHeader AddSOAPResponseHeader AjaxLink AjaxOnLoad ArrayAppend ArrayAvg ArrayClear ArrayDeleteAt " +
       "ArrayInsertAt ArrayIsDefined ArrayIsEmpty ArrayLen ArrayMax ArrayMin ArraySet ArraySort ArraySum ArraySwap ArrayToList " +
       "Asc ASin Atn BinaryDecode BinaryEncode BitAnd BitMaskClear BitMaskRead BitMaskSet BitNot BitOr BitSHLN BitSHRN BitXor " +
@@ -63,7 +63,7 @@
       "ValueList VerifyClient Week Wrap Wrap WriteOutput XmlChildPos XmlElemNew XmlFormat XmlGetNodeType XmlNew XmlParse XmlSearch XmlTransform " +
       "XmlValidate Year YesNoFormat";
 
-    var keywords =
+    const keywords =
       "cfabort cfajaximport cfajaxproxy cfapplet cfapplication cfargument cfassociate cfbreak cfcache cfcalendar " +
       "cfcase cfcatch cfchart cfchartdata cfchartseries cfcol cfcollection cfcomponent cfcontent cfcookie cfdbinfo " +
       "cfdefaultcase cfdirectory cfdiv cfdocument cfdocumentitem cfdocumentsection cfdump cfelse cfelseif cferror " +
@@ -79,7 +79,7 @@
       "cftextarea cfthread cfthrow cftimer cftooltip cftrace cftransaction cftree cftreeitem cftry cfupdate cfwddx " +
       "cfwindow cfxml cfzip cfzipparam";
 
-    var operators =
+    const operators =
       "all and any between cross in join like not null or outer some";
 
     this.regexList = [

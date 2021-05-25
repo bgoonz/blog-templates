@@ -21,7 +21,7 @@
     : null;
 
   function Brush() {
-    var keywords =
+    const keywords =
       "abstract as base bool break byte case catch char checked class const " +
       "continue decimal default delegate do double else enum event explicit " +
       "extern false finally fixed float for foreach get goto if implicit in int " +
@@ -31,7 +31,7 @@
       "typeof uint ulong unchecked unsafe ushort using virtual void while";
 
     function fixComments(match, regexInfo) {
-      var css = match[0].indexOf("///") == 0 ? "color1" : "comments";
+      const css = match[0].indexOf("///") == 0 ? "color1" : "comments";
       return [new SyntaxHighlighter.Match(match[0], match.index, css)];
     }
 

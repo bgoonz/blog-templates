@@ -21,9 +21,9 @@
     : null;
 
   function Brush() {
-    var keywords =
+    const keywords =
       "if fi then elif else for do done until while break continue case function return in eq ne ge le";
-    var commands =
+    const commands =
       "alias apropos awk basename bash bc bg builtin bzip2 cal cat cd cfdisk chgrp chmod chown chroot" +
       "cksum clear cmp comm command cp cron crontab csplit cut date dc dd ddrescue declare df " +
       "diff diff3 dig dir dircolors dirname dirs du echo egrep eject enable env ethtool eval " +

@@ -24,7 +24,7 @@
     // Contributes by B.v.Zanten, Getronics
     // http://confluence.atlassian.com/display/CONFEXT/New+Code+Macro
 
-    var keywords =
+    const keywords =
       "Add-Content Add-History Add-Member Add-PSSnapin Clear(-Content)? Clear-Item " +
       "Clear-ItemProperty Clear-Variable Compare-Object ConvertFrom-SecureString Convert-Path " +
       "ConvertTo-Html ConvertTo-SecureString Copy(-Item)? Copy-ItemProperty Export-Alias " +
@@ -46,7 +46,7 @@
       "Start-Sleep Start-Transcript Stop-Process Stop-Service Stop-Transcript Suspend-Service " +
       "Tee-Object Test-Path Trace-Command Update-FormatData Update-TypeData Where(-Object)? " +
       "Write-Debug Write-Error Write(-Host)? Write-Output Write-Progress Write-Verbose Write-Warning";
-    var alias =
+    const alias =
       "ac asnp clc cli clp clv cpi cpp cvpa diff epal epcsv fc fl " +
       "ft fw gal gc gci gcm gdr ghy gi gl gm gp gps group gsv " +
       "gsnp gu gv gwmi iex ihy ii ipal ipcsv mi mp nal ndr ni nv oh rdr " +

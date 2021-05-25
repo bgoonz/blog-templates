@@ -25,7 +25,7 @@
     // http://jldupont.blogspot.com/2009/06/erlang-syntax-highlighter.html
 
     // According to: http://erlang.org/doc/reference_manual/introduction.html#1.5
-    var keywords =
+    const keywords =
       "after and andalso band begin bnot bor bsl bsr bxor " +
       "case catch cond div end fun if let not of or orelse " +
       "query receive rem try when xor" +

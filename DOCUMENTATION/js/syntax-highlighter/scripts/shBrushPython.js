@@ -23,12 +23,12 @@
   function Brush() {
     // Contributed by Gheorghe Milas and Ahmad Sherif
 
-    var keywords =
+    const keywords =
       "and assert break class continue def del elif else " +
       "except exec finally for from global if import in is " +
       "lambda not or pass print raise return try yield while";
 
-    var funcs =
+    const funcs =
       "__import__ abs all any apply basestring bin bool buffer callable " +
       "chr classmethod cmp coerce compile complex delattr dict dir " +
       "divmod enumerate eval execfile file filter float format frozenset " +
@@ -38,7 +38,7 @@
       "reload repr reversed round set setattr slice sorted staticmethod " +
       "str sum super tuple type type unichr unicode vars xrange zip";
 
-    var special = "None True False self cls class_";
+    const special = "None True False self cls class_";
 
     this.regexList = [
       {
