@@ -19,7 +19,7 @@ p {
 }
 
 a {
-  color:hotpink;
+  color: hotpink;
 }
 
 footer {
@@ -29,5 +29,5 @@ footer {
 }
 
 footer > a {
-  color: #BBBBBB;
+  color: #bbbbbb;
 }
