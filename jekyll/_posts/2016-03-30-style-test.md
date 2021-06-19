@@ -11,8 +11,7 @@ you should definitely check out their service.
 
 Heavily copied content begins below...
 
-
-* * *
+---
 
 # Heading 1
 
@@ -26,13 +25,13 @@ Heavily copied content begins below...
 
 ###### Heading 6
 
-* * *
+---
 
 Lorem ipsum dolor sit amet, [test link]() adipiscing elit. **This is strong.** Nullam dignissim convallis est. Quisque aliquam. _This is emphasized._ Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. <cite>The New York Times</cite> (That’s a citation). <span style="text-decoration:underline;">Underline</span>. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
 
 HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. To copy a file type `COPY filename`. <del>Dinner’s at 5:00.</del> <span style="text-decoration:underline;">Let’s make that 7</span>. This <del>text</del> has been struck.
 
-* * *
+---
 
 ## Media
 
@@ -52,7 +51,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 Labore et dolore.
 
-* * *
+---
 
 ## List Types
 
@@ -66,21 +65,21 @@ Definition
 
 ### Ordered List
 
-  1. List Item 1
-  2. List Item 2
-     1. Nested list item A
-     2. Nested list item B
-  3. List Item 3
+1. List Item 1
+2. List Item 2
+   1. Nested list item A
+   2. Nested list item B
+3. List Item 3
 
 ### Unordered List
 
-  * List Item 1
-  * List Item 2
-    * Nested list item A
-    * Nested list item B
-  * List Item 3
+- List Item 1
+- List Item 2
+  - Nested list item A
+  - Nested list item B
+- List Item 3
 
-* * *
+---
 
 ## Table
 
@@ -92,8 +91,7 @@ Definition
 | Division 1 | Division 2 | Division 3
 |---
 
-
-* * *
+---
 
 ## Preformatted Text
 
@@ -105,16 +103,15 @@ Code can be presented inline, like `<?php bloginfo('stylesheet_url'); ?>`, or us
 filter](http://jekyllrb.com/docs/templates/#code-snippet-highlighting) to
 highlight a block of code. Because we have more specific typographic needs for code, we’ll specify Consolas and Monaco ahead of the browser-defined monospace font.
 
-
 {% highlight css %}
 #container {
-  float: left;
-  margin: 0 -240px 0 0;
-  width: 100%;
+float: left;
+margin: 0 -240px 0 0;
+width: 100%;
 }
 {% endhighlight %}
 
-* * *
+---
 
 ## Blockquotes
 
@@ -124,11 +121,12 @@ Let’s keep it simple. Italics are good to help set it off from the body text. 
 
 And here’s a bit of trailing text.
 
-* * *
+---
 
 ## Text-level semantics
 
 HTML elements
+
 <p>The <a href="#">a element</a> example <br>
 The <abbr>abbr element</abbr> and <abbr title="Title text">abbr element with title</abbr> examples <br>
 The <b>b element</b> example <br>
@@ -190,5 +188,5 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 Isn't it beautiful.
 
-*[HTML]: Hyper Text Markup Language
-*[CSS]: Cascading Style Sheets
+_[HTML]: Hyper Text Markup Language
+_[CSS]: Cascading Style Sheets

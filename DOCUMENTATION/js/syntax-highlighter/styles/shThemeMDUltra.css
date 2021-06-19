@@ -23,7 +23,8 @@
 .syntaxhighlighter .line.alt2 {
   background-color: #222222 !important;
 }
-.syntaxhighlighter .line.highlighted.alt1, .syntaxhighlighter .line.highlighted.alt2 {
+.syntaxhighlighter .line.highlighted.alt1,
+.syntaxhighlighter .line.highlighted.alt2 {
   background-color: #253e5a !important;
 }
 .syntaxhighlighter .line.highlighted.number {
@@ -70,13 +71,16 @@
 .syntaxhighlighter .toolbar a:hover {
   color: #9ccff4 !important;
 }
-.syntaxhighlighter .plain, .syntaxhighlighter .plain a {
+.syntaxhighlighter .plain,
+.syntaxhighlighter .plain a {
   color: lime !important;
 }
-.syntaxhighlighter .comments, .syntaxhighlighter .comments a {
+.syntaxhighlighter .comments,
+.syntaxhighlighter .comments a {
   color: #428bdd !important;
 }
-.syntaxhighlighter .string, .syntaxhighlighter .string a {
+.syntaxhighlighter .string,
+.syntaxhighlighter .string a {
   color: lime !important;
 }
 .syntaxhighlighter .keyword {
@@ -102,12 +106,15 @@
   color: #aaaaff !important;
   background-color: none !important;
 }
-.syntaxhighlighter .color1, .syntaxhighlighter .color1 a {
+.syntaxhighlighter .color1,
+.syntaxhighlighter .color1 a {
   color: red !important;
 }
-.syntaxhighlighter .color2, .syntaxhighlighter .color2 a {
+.syntaxhighlighter .color2,
+.syntaxhighlighter .color2 a {
   color: yellow !important;
 }
-.syntaxhighlighter .color3, .syntaxhighlighter .color3 a {
+.syntaxhighlighter .color3,
+.syntaxhighlighter .color3 a {
   color: #ffaa3e !important;
 }

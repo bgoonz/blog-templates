@@ -6,23 +6,22 @@
 [![Code Climate](https://codeclimate.com/github/lostisland/faraday/badges/gpa.svg)](https://codeclimate.com/github/lostisland/faraday)
 [![Gitter](https://badges.gitter.im/lostisland/faraday.svg)](https://gitter.im/lostisland/faraday?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-
 Faraday is an HTTP client lib that provides a common interface over many
 adapters (such as Net::HTTP) and embraces the concept of Rack middleware when
 processing the request/response cycle.
 
 Faraday supports these adapters out of the box:
 
-* [Net::HTTP][net_http] _(default)_
-* [Net::HTTP::Persistent][persistent]
-* [Excon][]
-* [Patron][]
-* [EventMachine][]
-* [HTTPClient][]
+- [Net::HTTP][net_http] _(default)_
+- [Net::HTTP::Persistent][persistent]
+- [Excon][]
+- [Patron][]
+- [EventMachine][]
+- [HTTPClient][]
 
 Adapters are slowly being moved into their own gems, or bundled with HTTP clients:
 
-* [Typhoeus][]
+- [Typhoeus][]
 
 It also includes a Rack adapter for hitting loaded Rack applications through
 Rack::Test, and a Test adapter for stubbing requests by hand.
@@ -38,6 +37,7 @@ Available at [rubydoc.info](http://www.rubydoc.info/gems/faraday).
 ```ruby
 response = Faraday.get 'http://sushi.com/nigiri/sake.json'
 ```
+
 A simple `get` request can be performed by using the syntax described above. This works if you don't need to set up anything; you can roll with just the default middleware
 stack and default adapter (see [Faraday::RackBuilder#initialize](https://github.com/lostisland/faraday/blob/master/lib/faraday/rack_builder.rb)).
 
@@ -49,7 +49,7 @@ response = conn.get '/users'                 # GET http://www.example.com/users'
 ```
 
 Connections can also take an options hash as a parameter or be configured by using a block. Checkout the section called [Advanced middleware usage](#advanced-middleware-usage) for more details about how to use this block for configurations.
-Since the default middleware stack uses url\_encoded middleware and default adapter, use them on building your own middleware stack.
+Since the default middleware stack uses url_encoded middleware and default adapter, use them on building your own middleware stack.
 
 ```ruby
 conn = Faraday.new(:url => 'http://sushi.com') do |faraday|
@@ -142,8 +142,8 @@ end
 
 The value of Faraday `params_encoder` can be any object that responds to:
 
-* `encode(hash) #=> String`
-* `decode(string) #=> Hash`
+- `encode(hash) #=> String`
+- `decode(string) #=> Hash`
 
 The encoder will affect both how query strings are processed and how POST bodies
 get serialized. The default encoder is Faraday::NestedParamsEncoder.
@@ -198,9 +198,9 @@ end
 This request middleware setup affects POST/PUT requests in the following way:
 
 1. `Request::Multipart` checks for files in the payload, otherwise leaves
-  everything untouched;
+   everything untouched;
 2. `Request::UrlEncoded` encodes as "application/x-www-form-urlencoded" if not
-  already encoded or of another type
+   already encoded or of another type
 
 Swapping middleware means giving the other priority. Specifying the
 "Content-Type" for the request is explicitly stating which middleware should
@@ -260,6 +260,7 @@ Faraday is intended to be a generic interface between your code and the adapter.
 When that happens, you can pass a block when specifying the adapter to customize it. The block parameter will change based on the adapter you're using. See below for some examples.
 
 ### NetHttp
+
 ```ruby
 conn = Faraday.new(...) do |f|
   f.adapter :net_http do |http| # yields Net::HTTP
@@ -272,6 +273,7 @@ end
 ```
 
 ### NetHttpPersistent
+
 ```ruby
 conn = Faraday.new(...) do |f|
   f.adapter :net_http_persistent, pool_size: 5 do |http| # yields Net::HTTP::Persistent
@@ -282,6 +284,7 @@ end
 ```
 
 ### Patron
+
 ```ruby
 conn = Faraday.new(...) do |f|
   f.adapter :patron do |session| # yields Patron::Session
@@ -291,6 +294,7 @@ end
 ```
 
 ### HTTPClient
+
 ```ruby
 conn = Faraday.new(...) do |f|
   f.adapter :httpclient do |client| # yields HTTPClient
@@ -340,9 +344,9 @@ stubs.verify_stubbed_calls
 This library aims to support and is [tested against][travis] the following Ruby
 implementations:
 
-* Ruby 1.9.3+
-* [JRuby][] 1.7+
-* [Rubinius][] 2+
+- Ruby 1.9.3+
+- [JRuby][] 1.7+
+- [Rubinius][] 2+
 
 If something doesn't work on one of these Ruby versions, it's a bug.
 
@@ -368,14 +372,14 @@ But before you start coding, please read our [Contributing Guide](https://github
 Copyright (c) 2009-2017 [Rick Olson](mailto:technoweenie@gmail.com), Zack Hobson.
 See [LICENSE][] for details.
 
-[net_http]:     http://ruby-doc.org/stdlib/libdoc/net/http/rdoc/Net/HTTP.html
-[persistent]:   https://github.com/drbrain/net-http-persistent
-[travis]:       https://travis-ci.org/lostisland/faraday
-[excon]:        https://github.com/excon/excon#readme
-[patron]:       http://toland.github.io/patron/
+[net_http]: http://ruby-doc.org/stdlib/libdoc/net/http/rdoc/Net/HTTP.html
+[persistent]: https://github.com/drbrain/net-http-persistent
+[travis]: https://travis-ci.org/lostisland/faraday
+[excon]: https://github.com/excon/excon#readme
+[patron]: http://toland.github.io/patron/
 [eventmachine]: https://github.com/igrigorik/em-http-request#readme
-[httpclient]:   https://github.com/nahi/httpclient
-[typhoeus]:     https://github.com/typhoeus/typhoeus/blob/master/lib/typhoeus/adapters/faraday.rb
-[jruby]:        http://jruby.org/
-[rubinius]:     http://rubini.us/
-[license]:      LICENSE.md
+[httpclient]: https://github.com/nahi/httpclient
+[typhoeus]: https://github.com/typhoeus/typhoeus/blob/master/lib/typhoeus/adapters/faraday.rb
+[jruby]: http://jruby.org/
+[rubinius]: http://rubini.us/
+[license]: LICENSE.md

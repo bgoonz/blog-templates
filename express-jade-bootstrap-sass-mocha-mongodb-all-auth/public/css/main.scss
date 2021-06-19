@@ -104,7 +104,12 @@ footer {
 }
 
 .panel-body {
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin-top: 0;
   }
 }
@@ -133,27 +138,35 @@ footer {
 .btn-default {
   border-color: #ccc;
   background: #f5f5f5 linear-gradient(to bottom, #fff, #f5f5f5);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), inset 0 -1px 4px rgba(151, 159, 175, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08),
+    inset 0 -1px 4px rgba(151, 159, 175, 0.2);
   &:active {
-    background: darken(#f5f5f5, 6%) linear-gradient(to bottom, darken(#fff, 6%), darken(#f5f5f5, 6%));
+    background: darken(#f5f5f5, 6%)
+      linear-gradient(to bottom, darken(#fff, 6%), darken(#f5f5f5, 6%));
   }
 }
 
 .btn-success {
   border-color: #208a46;
   background: #29b35b linear-gradient(to bottom, #2ec866, #29b35b);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.1), inset 0 -1px 4px rgba(32, 138, 70, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1),
+    inset 0 -1px 4px rgba(32, 138, 70, 0.3);
   &:active {
-    background: darken(#29b35b, 6%) linear-gradient(to bottom, darken(#2ec866, 6%), darken(#29b35b, 6%));
+    background: darken(#29b35b, 6%)
+      linear-gradient(to bottom, darken(#2ec866, 6%), darken(#29b35b, 6%));
   }
 }
 
 .btn-danger {
   border-color: #8c1512;
   background: #b61b17 linear-gradient(to bottom, #cc1e1a, #b61b17);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.1), inset 0 -1px 4px rgba(140, 21, 18, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1),
+    inset 0 -1px 4px rgba(140, 21, 18, 0.3);
   &:active {
-    background: darken(#b61b17, 6%) linear-gradient(to bottom, darken(#cc1e1a, 6%), darken(#b61b17, 6%));
+    background: darken(#b61b17, 6%)
+      linear-gradient(to bottom, darken(#cc1e1a, 6%), darken(#b61b17, 6%));
   }
 }
 
@@ -161,7 +174,9 @@ footer {
   color: #fff;
   border-color: #335190;
   background: #3b5998 linear-gradient(to bottom, #4263a9, #3b5998);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.1), inset 0 -1px 4px rgba(59, 89, 152, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1),
+    inset 0 -1px 4px rgba(59, 89, 152, 0.3);
   &:hover,
   &:focus {
     color: #fff;
@@ -172,7 +187,9 @@ footer {
   color: #fff;
   border-color: #009fdb;
   background: #00aced linear-gradient(to bottom, #05baff, #00aced);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.1), inset 0 -1px 4px rgba(0, 172, 237, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1),
+    inset 0 -1px 4px rgba(0, 172, 237, 0.3);
   &:hover,
   &:focus {
     color: #fff;
@@ -183,7 +200,9 @@ footer {
   color: #fff;
   border-color: #d54331;
   background: #dd4b39 linear-gradient(to bottom, #e05d4d, #dd4b39);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.1), inset 0 -1px 4px rgba(221, 75, 57, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1),
+    inset 0 -1px 4px rgba(221, 75, 57, 0.3);
   &:hover,
   &:focus {
     color: #fff;
@@ -194,7 +213,9 @@ footer {
   color: #fff;
   border-color: #4f7192;
   background: #587ea3 linear-gradient(to bottom, #678aad, #587ea3);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.1), inset 0 -1px 4px rgba(79, 113, 146, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1),
+    inset 0 -1px 4px rgba(79, 113, 146, 0.3);
   &:hover,
   &:focus {
     color: #fff;
@@ -213,7 +234,8 @@ textarea {
   padding: 8px 12px;
   border: 2px solid #ebebeb;
   border-radius: 0;
-  box-shadow: inset 0 1px 2px rgba(150, 160, 175, 0.1), inset 0 1px 15px rgba(150, 160, 175, 0.05);
+  box-shadow: inset 0 1px 2px rgba(150, 160, 175, 0.1),
+    inset 0 1px 15px rgba(150, 160, 175, 0.05);
 }
 
 .form-group > label {

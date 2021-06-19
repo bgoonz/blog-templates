@@ -7,7 +7,7 @@ description: >
   open sourced.<br> This is my Jekyll port of the Roon theme.
 url: "http://yourdomain.com"
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username: jekyll
 
 permalink: pretty
 paginate: 5

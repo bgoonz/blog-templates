@@ -1,5 +1,4 @@
-ExecJS
-======
+# ExecJS
 
 ExecJS lets you run JavaScript code from Ruby. It automatically picks
 the best runtime available to evaluate your JavaScript program, then
@@ -7,21 +6,21 @@ returns the result to you as a Ruby object.
 
 ExecJS supports these runtimes:
 
-* [therubyracer](https://github.com/cowboyd/therubyracer) - Google V8
+- [therubyracer](https://github.com/cowboyd/therubyracer) - Google V8
   embedded within Ruby
-* [therubyrhino](https://github.com/cowboyd/therubyrhino) - Mozilla
+- [therubyrhino](https://github.com/cowboyd/therubyrhino) - Mozilla
   Rhino embedded within JRuby
-* [Duktape.rb](https://github.com/judofyr/duktape.rb) - Duktape JavaScript interpreter
-* [Node.js](http://nodejs.org/)
-* Apple JavaScriptCore - Included with Mac OS X
-* [Microsoft Windows Script Host](http://msdn.microsoft.com/en-us/library/9bbdkx3k.aspx) (JScript)
-* [Google V8](http://code.google.com/p/v8/)
-* [mini_racer](https://github.com/discourse/mini_racer) - Google V8
+- [Duktape.rb](https://github.com/judofyr/duktape.rb) - Duktape JavaScript interpreter
+- [Node.js](http://nodejs.org/)
+- Apple JavaScriptCore - Included with Mac OS X
+- [Microsoft Windows Script Host](http://msdn.microsoft.com/en-us/library/9bbdkx3k.aspx) (JScript)
+- [Google V8](http://code.google.com/p/v8/)
+- [mini_racer](https://github.com/discourse/mini_racer) - Google V8
   embedded within Ruby
 
 A short example:
 
-``` ruby
+```ruby
 require "execjs"
 ExecJS.eval "'red yellow blue'.split(' ')"
 # => ["red", "yellow", "blue"]
@@ -29,7 +28,7 @@ ExecJS.eval "'red yellow blue'.split(' ')"
 
 A longer example, demonstrating how to invoke the CoffeeScript compiler:
 
-``` ruby
+```ruby
 require "execjs"
 require "open-uri"
 source = open("http://coffeescript.org/extras/coffee-script.js").read
@@ -82,4 +81,5 @@ features and discuss issues.
 See [CONTRIBUTING](CONTRIBUTING.md).
 
 ## License
+
 ExecJS is released under the [MIT License](MIT-LICENSE).

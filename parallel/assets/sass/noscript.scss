@@ -1,8 +1,8 @@
-@import 'libs/vars';
-@import 'libs/functions';
-@import 'libs/mixins';
-@import 'libs/vendor';
-@import 'libs/breakpoints';
+@import "libs/vars";
+@import "libs/functions";
+@import "libs/mixins";
+@import "libs/vendor";
+@import "libs/breakpoints";
 
 /*
 	Parallelism by HTML5 UP
@@ -12,15 +12,15 @@
 
 /* Main */
 
-	#main {
-		opacity: 1 !important;
-		overflow-x: auto !important;
+#main {
+  opacity: 1 !important;
+  overflow-x: auto !important;
 
-		.item {
-			&.thumb {
-				img {
-					opacity: 1 !important;
-				}
-			}
-		}
-	}
+  .item {
+    &.thumb {
+      img {
+        opacity: 1 !important;
+      }
+    }
+  }
+}

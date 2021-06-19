@@ -1,6 +1,6 @@
 # Jekyll Avatar
 
-*A Jekyll plugin for rendering GitHub avatars*
+_A Jekyll plugin for rendering GitHub avatars_
 
 [![Build Status](https://travis-ci.org/benbalter/jekyll-avatar.svg)](https://travis-ci.org/benbalter/jekyll-avatar)
 
@@ -38,7 +38,19 @@ With `[USERNAME]` being the user's GitHub username:
 That will output:
 
 ```html
-<img class="avatar avatar-small" src="https://avatars3.githubusercontent.com/hubot?v=3&amp;s=40" alt="hubot" srcset="https://avatars3.githubusercontent.com/hubot?v=3&amp;s=40 1x, https://avatars3.githubusercontent.com/hubot?v=3&amp;s=80 2x, https://avatars3.githubusercontent.com/hubot?v=3&amp;s=120 3x, https://avatars3.githubusercontent.com/hubot?v=3&amp;s=160 4x" width="40" height="40" />
+<img
+  class="avatar avatar-small"
+  src="https://avatars3.githubusercontent.com/hubot?v=3&amp;s=40"
+  alt="hubot"
+  srcset="
+    https://avatars3.githubusercontent.com/hubot?v=3&amp;s=40  1x,
+    https://avatars3.githubusercontent.com/hubot?v=3&amp;s=80  2x,
+    https://avatars3.githubusercontent.com/hubot?v=3&amp;s=120 3x,
+    https://avatars3.githubusercontent.com/hubot?v=3&amp;s=160 4x
+  "
+  width="40"
+  height="40"
+/>
 ```
 
 ### Customizing
@@ -52,7 +64,19 @@ You can customize the size of the resulting avatar by passing the size argument:
 That will output:
 
 ```html
-<img class="avatar" src="https://avatars3.githubusercontent.com/hubot?v=3&amp;s=50" alt="hubot" srcset="https://avatars3.githubusercontent.com/hubot?v=3&amp;s=50 1x, https://avatars3.githubusercontent.com/hubot?v=3&amp;s=100 2x, https://avatars3.githubusercontent.com/hubot?v=3&amp;s=150 3x, https://avatars3.githubusercontent.com/hubot?v=3&amp;s=200 4x" width="50" height="50" />
+<img
+  class="avatar"
+  src="https://avatars3.githubusercontent.com/hubot?v=3&amp;s=50"
+  alt="hubot"
+  srcset="
+    https://avatars3.githubusercontent.com/hubot?v=3&amp;s=50  1x,
+    https://avatars3.githubusercontent.com/hubot?v=3&amp;s=100 2x,
+    https://avatars3.githubusercontent.com/hubot?v=3&amp;s=150 3x,
+    https://avatars3.githubusercontent.com/hubot?v=3&amp;s=200 4x
+  "
+  width="50"
+  height="50"
+/>
 ```
 
 ### Passing the username as variable
@@ -83,8 +107,8 @@ For pages showing a large number of avatars, you may want to load the images laz
 
 This will set the `data-src` and `data-srcset` attributes on the `<img>` tag, which is compatible with many lazy load JavaScript plugins, such as:
 
-* https://www.andreaverlicchi.eu/lazyload/
-* https://appelsiini.net/projects/lazyload/
+- https://www.andreaverlicchi.eu/lazyload/
+- https://appelsiini.net/projects/lazyload/
 
 ### Using with GitHub Enterprise
 
@@ -92,5 +116,5 @@ To use Jekyll Avatars with GitHub Enterprise, you must set the `PAGES_AVATARS_UR
 
 This should be the full URL to the avatars subdomain or subpath. For example:
 
-* With subdomain isolation: `PAGES_AVATARS_URL="https://avatars.github.example.com"`
-* Without subdomain isolation: `PAGES_AVATARS_URL="https://github.example.com/avatars"`
+- With subdomain isolation: `PAGES_AVATARS_URL="https://avatars.github.example.com"`
+- Without subdomain isolation: `PAGES_AVATARS_URL="https://github.example.com/avatars"`

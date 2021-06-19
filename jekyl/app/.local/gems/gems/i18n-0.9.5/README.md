@@ -8,30 +8,30 @@ Ruby Internationalization and localization solution.
 
 Features:
 
-* translation and localization
-* interpolation of values to translations (Ruby 1.9 compatible syntax)
-* pluralization (CLDR compatible)
-* customizable transliteration to ASCII
-* flexible defaults
-* bulk lookup
-* lambdas as translation data
-* custom key/scope separator
-* custom exception handlers
-* extensible architecture with a swappable backend
+- translation and localization
+- interpolation of values to translations (Ruby 1.9 compatible syntax)
+- pluralization (CLDR compatible)
+- customizable transliteration to ASCII
+- flexible defaults
+- bulk lookup
+- lambdas as translation data
+- custom key/scope separator
+- custom exception handlers
+- extensible architecture with a swappable backend
 
 Pluggable features:
 
-* Cache
-* Pluralization: lambda pluralizers stored as translation data
-* Locale fallbacks, RFC4647 compliant (optionally: RFC4646 locale validation)
-* [Gettext support](https://github.com/svenfuchs/i18n/wiki/Gettext)
-* Translation metadata
+- Cache
+- Pluralization: lambda pluralizers stored as translation data
+- Locale fallbacks, RFC4647 compliant (optionally: RFC4646 locale validation)
+- [Gettext support](https://github.com/svenfuchs/i18n/wiki/Gettext)
+- Translation metadata
 
 Alternative backends:
 
-* Chain
-* ActiveRecord (optionally: ActiveRecord::Missing and ActiveRecord::StoreProcs)
-* KeyValue (uses active_support/json and cannot store procs)
+- Chain
+- ActiveRecord (optionally: ActiveRecord::Missing and ActiveRecord::StoreProcs)
+- KeyValue (uses active_support/json and cannot store procs)
 
 For more information and lots of resources see [the 'Resources' page on the wiki](https://github.com/svenfuchs/i18n/wiki/Resources).
 
@@ -45,12 +45,12 @@ gem install i18n
 
 You can run tests both with
 
-* `rake test` or just `rake`
-* run any test file directly, e.g. `ruby -Ilib:test test/api/simple_test.rb`
+- `rake test` or just `rake`
+- run any test file directly, e.g. `ruby -Ilib:test test/api/simple_test.rb`
 
 You can run all tests against all Gemfiles with
 
-* `ruby test/run_all.rb`
+- `ruby test/run_all.rb`
 
 The structure of the test suite is a bit unusual as it uses modules to reuse
 particular tests in different test cases.
@@ -69,11 +69,11 @@ follow the usual test setup and should be easy to grok.
 
 ## Authors
 
-* [Sven Fuchs](http://www.artweb-design.de)
-* [Joshua Harvey](http://www.workingwithrails.com/person/759-joshua-harvey)
-* [Stephan Soller](http://www.arkanis-development.de)
-* [Saimon Moore](http://saimonmoore.net)
-* [Matt Aimonetti](https://matt.aimonetti.net/)
+- [Sven Fuchs](http://www.artweb-design.de)
+- [Joshua Harvey](http://www.workingwithrails.com/person/759-joshua-harvey)
+- [Stephan Soller](http://www.arkanis-development.de)
+- [Saimon Moore](http://saimonmoore.net)
+- [Matt Aimonetti](https://matt.aimonetti.net/)
 
 ## Contributors
 

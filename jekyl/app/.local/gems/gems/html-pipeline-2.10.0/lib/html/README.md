@@ -152,20 +152,20 @@ EmojiPipeline = Pipeline.new [
 
 ## Filters
 
-* `MentionFilter` - replace `@user` mentions with links
-* `AbsoluteSourceFilter` - replace relative image urls with fully qualified versions
-* `AutolinkFilter` - auto_linking urls in HTML
-* `CamoFilter` - replace http image urls with [camo-fied](https://github.com/atmos/camo) https versions
-* `EmailReplyFilter` - util filter for working with emails
-* `EmojiFilter` - everyone loves [emoji](http://www.emoji-cheat-sheet.com/)!
-* `HttpsFilter` - HTML Filter for replacing http github urls with https versions.
-* `ImageMaxWidthFilter` - link to full size image for large images
-* `MarkdownFilter` - convert markdown to html
-* `PlainTextInputFilter` - html escape text and wrap the result in a div
-* `SanitizationFilter` - whitelist sanitize user markup
-* `SyntaxHighlightFilter` - code syntax highlighter
-* `TextileFilter` - convert textile to html
-* `TableOfContentsFilter` - anchor headings with name attributes and generate Table of Contents html unordered list linking headings
+- `MentionFilter` - replace `@user` mentions with links
+- `AbsoluteSourceFilter` - replace relative image urls with fully qualified versions
+- `AutolinkFilter` - auto_linking urls in HTML
+- `CamoFilter` - replace http image urls with [camo-fied](https://github.com/atmos/camo) https versions
+- `EmailReplyFilter` - util filter for working with emails
+- `EmojiFilter` - everyone loves [emoji](http://www.emoji-cheat-sheet.com/)!
+- `HttpsFilter` - HTML Filter for replacing http github urls with https versions.
+- `ImageMaxWidthFilter` - link to full size image for large images
+- `MarkdownFilter` - convert markdown to html
+- `PlainTextInputFilter` - html escape text and wrap the result in a div
+- `SanitizationFilter` - whitelist sanitize user markup
+- `SyntaxHighlightFilter` - code syntax highlighter
+- `TextileFilter` - convert textile to html
+- `TableOfContentsFilter` - anchor headings with name attributes and generate Table of Contents html unordered list linking headings
 
 ## Dependencies
 
@@ -179,15 +179,15 @@ add the following to your Gemfile:
 gem 'rouge'
 ```
 
-* `AutolinkFilter` - `rinku`
-* `EmailReplyFilter` - `escape_utils`, `email_reply_parser`
-* `EmojiFilter` - `gemoji`
-* `MarkdownFilter` - `commonmarker`
-* `PlainTextInputFilter` - `escape_utils`
-* `SanitizationFilter` - `sanitize`
-* `SyntaxHighlightFilter` - `rouge`
-* `TableOfContentsFilter` - `escape_utils`
-* `TextileFilter` - `RedCloth`
+- `AutolinkFilter` - `rinku`
+- `EmailReplyFilter` - `escape_utils`, `email_reply_parser`
+- `EmojiFilter` - `gemoji`
+- `MarkdownFilter` - `commonmarker`
+- `PlainTextInputFilter` - `escape_utils`
+- `SanitizationFilter` - `sanitize`
+- `SyntaxHighlightFilter` - `rouge`
+- `TableOfContentsFilter` - `escape_utils`
+- `TextileFilter` - `RedCloth`
 
 _Note:_ See [Gemfile](/Gemfile) `:test` block for version requirements.
 
@@ -196,6 +196,7 @@ _Note:_ See [Gemfile](/Gemfile) `:test` block for version requirements.
 Full reference documentation can be [found here](http://rubydoc.info/gems/html-pipeline/frames).
 
 ## Extending
+
 To write a custom filter, you need a class with a `call` method that inherits
 from `HTML::Pipeline::Filter`.
 
@@ -235,25 +236,24 @@ built as an external gem.
 
 Here are some extensions people have built:
 
-* [html-pipeline-asciidoc_filter](https://github.com/asciidoctor/html-pipeline-asciidoc_filter)
-* [jekyll-html-pipeline](https://github.com/gjtorikian/jekyll-html-pipeline)
-* [nanoc-html-pipeline](https://github.com/burnto/nanoc-html-pipeline)
-* [html-pipeline-bitly](https://github.com/dewski/html-pipeline-bitly)
-* [html-pipeline-cite](https://github.com/lifted-studios/html-pipeline-cite)
-* [tilt-html-pipeline](https://github.com/bradgessler/tilt-html-pipeline)
-* [html-pipeline-wiki-link'](https://github.com/lifted-studios/html-pipeline-wiki-link) - WikiMedia-style wiki links
-* [task_list](https://github.com/github/task_list) - GitHub flavor Markdown Task List
-* [html-pipeline-nico_link](https://github.com/rutan/html-pipeline-nico_link) - An HTML::Pipeline filter for [niconico](http://www.nicovideo.jp) description links
-* [html-pipeline-gitlab](https://gitlab.com/gitlab-org/html-pipeline-gitlab) - This gem implements various filters for html-pipeline used by GitLab
-* [html-pipeline-youtube](https://github.com/st0012/html-pipeline-youtube) - An HTML::Pipeline filter for YouTube links
-* [html-pipeline-flickr](https://github.com/st0012/html-pipeline-flickr) - An HTML::Pipeline filter for Flickr links
-* [html-pipeline-vimeo](https://github.com/dlackty/html-pipeline-vimeo) - An HTML::Pipeline filter for Vimeo links
-* [html-pipeline-hashtag](https://github.com/mr-dxdy/html-pipeline-hashtag) - An HTML::Pipeline filter for hashtags
-* [html-pipeline-linkify_github](https://github.com/jollygoodcode/html-pipeline-linkify_github) - An HTML::Pipeline filter to autolink GitHub urls
-* [html-pipeline-redcarpet_filter](https://github.com/bmikol/html-pipeline-redcarpet_filter) - Render Markdown source text into Markdown HTML using Redcarpet
-* [html-pipeline-typogruby_filter](https://github.com/bmikol/html-pipeline-typogruby_filter) - Add Typogruby text filters to your HTML::Pipeline
-* [korgi](https://github.com/jodeci/korgi) - HTML::Pipeline filters for links to Rails resources
-
+- [html-pipeline-asciidoc_filter](https://github.com/asciidoctor/html-pipeline-asciidoc_filter)
+- [jekyll-html-pipeline](https://github.com/gjtorikian/jekyll-html-pipeline)
+- [nanoc-html-pipeline](https://github.com/burnto/nanoc-html-pipeline)
+- [html-pipeline-bitly](https://github.com/dewski/html-pipeline-bitly)
+- [html-pipeline-cite](https://github.com/lifted-studios/html-pipeline-cite)
+- [tilt-html-pipeline](https://github.com/bradgessler/tilt-html-pipeline)
+- [html-pipeline-wiki-link'](https://github.com/lifted-studios/html-pipeline-wiki-link) - WikiMedia-style wiki links
+- [task_list](https://github.com/github/task_list) - GitHub flavor Markdown Task List
+- [html-pipeline-nico_link](https://github.com/rutan/html-pipeline-nico_link) - An HTML::Pipeline filter for [niconico](http://www.nicovideo.jp) description links
+- [html-pipeline-gitlab](https://gitlab.com/gitlab-org/html-pipeline-gitlab) - This gem implements various filters for html-pipeline used by GitLab
+- [html-pipeline-youtube](https://github.com/st0012/html-pipeline-youtube) - An HTML::Pipeline filter for YouTube links
+- [html-pipeline-flickr](https://github.com/st0012/html-pipeline-flickr) - An HTML::Pipeline filter for Flickr links
+- [html-pipeline-vimeo](https://github.com/dlackty/html-pipeline-vimeo) - An HTML::Pipeline filter for Vimeo links
+- [html-pipeline-hashtag](https://github.com/mr-dxdy/html-pipeline-hashtag) - An HTML::Pipeline filter for hashtags
+- [html-pipeline-linkify_github](https://github.com/jollygoodcode/html-pipeline-linkify_github) - An HTML::Pipeline filter to autolink GitHub urls
+- [html-pipeline-redcarpet_filter](https://github.com/bmikol/html-pipeline-redcarpet_filter) - Render Markdown source text into Markdown HTML using Redcarpet
+- [html-pipeline-typogruby_filter](https://github.com/bmikol/html-pipeline-typogruby_filter) - Add Typogruby text filters to your HTML::Pipeline
+- [korgi](https://github.com/jodeci/korgi) - HTML::Pipeline filters for links to Rails resources
 
 ## Instrumenting
 
@@ -263,7 +263,7 @@ must be setup with an
 compatible service object and a name. New pipeline objects will default to the
 `HTML::Pipeline.default_instrumentation_service` object.
 
-``` ruby
+```ruby
 # the AS::Notifications-compatible service object
 service = ActiveSupport::Notifications
 
@@ -282,7 +282,7 @@ Filters are instrumented when they are run through the pipeline. A
 `payload` should include the `filter` name. Each filter will trigger its own
 instrumentation call.
 
-``` ruby
+```ruby
 service.subscribe "call_filter.html_pipeline" do |event, start, ending, transaction_id, payload|
   payload[:pipeline] #=> "MarkdownPipeline", set with `setup_instrumentation`
   payload[:filter] #=> "MarkdownFilter"
@@ -294,7 +294,7 @@ end
 
 The full pipeline is also instrumented:
 
-``` ruby
+```ruby
 service.subscribe "call_pipeline.html_pipeline" do |event, start, ending, transaction_id, payload|
   payload[:pipeline] #=> "MarkdownPipeline", set with `setup_instrumentation`
   payload[:filters] #=> ["MarkdownFilter"]
@@ -357,9 +357,9 @@ Project is a member of the [OSS Manifesto](http://ossmanifesto.org/).
 
 This section is for gem maintainers to cut a new version of the gem.
 
-* create a new branch named `release-x.y.z` where `x.y.z` follows [semver](http://semver.org)
-* update lib/html/pipeline/version.rb to next version number X.X.X
-* update CHANGELOG.md. Prepare a draft with `script/changelog`
-* push branch and create a new pull request
-* after tests are green, merge to master
-* on the master branch, run `script/release`
+- create a new branch named `release-x.y.z` where `x.y.z` follows [semver](http://semver.org)
+- update lib/html/pipeline/version.rb to next version number X.X.X
+- update CHANGELOG.md. Prepare a draft with `script/changelog`
+- push branch and create a new pull request
+- after tests are green, merge to master
+- on the master branch, run `script/release`

@@ -30,11 +30,11 @@ See: https://jekyllrb.com/docs/troubleshooting/
 
 ## Getting Started
 
-* [Install](https://jekyllrb.com/docs/installation/) the gem
-* Read up about its [Usage](https://jekyllrb.com/docs/usage/) and [Configuration](https://jekyllrb.com/docs/configuration/)
-* Take a gander at some existing [Sites](https://wiki.github.com/jekyll/jekyll/sites)
-* [Fork](https://github.com/jekyll/jekyll/fork) and [Contribute](https://jekyllrb.com/docs/contributing/) your own modifications
-* Have questions? Check out our official forum community [Jekyll Talk](https://talk.jekyllrb.com/) or [`#jekyll` on irc.freenode.net](https://botbot.me/freenode/jekyll/)
+- [Install](https://jekyllrb.com/docs/installation/) the gem
+- Read up about its [Usage](https://jekyllrb.com/docs/usage/) and [Configuration](https://jekyllrb.com/docs/configuration/)
+- Take a gander at some existing [Sites](https://wiki.github.com/jekyll/jekyll/sites)
+- [Fork](https://github.com/jekyll/jekyll/fork) and [Contribute](https://jekyllrb.com/docs/contributing/) your own modifications
+- Have questions? Check out our official forum community [Jekyll Talk](https://talk.jekyllrb.com/) or [`#jekyll` on irc.freenode.net](https://botbot.me/freenode/jekyll/)
 
 ## Code of Conduct
 
@@ -49,12 +49,12 @@ these terms, please let one of our core team members [Olivia](mailto:olivia@jeky
 
 ## Diving In
 
-* [Migrate](http://import.jekyllrb.com/docs/home/) from your previous system
-* Learn how the [YAML Front Matter](https://jekyllrb.com/docs/frontmatter/) works
-* Put information on your site with [Variables](https://jekyllrb.com/docs/variables/)
-* Customize the [Permalinks](https://jekyllrb.com/docs/permalinks/) your posts are generated with
-* Use the built-in [Liquid Extensions](https://jekyllrb.com/docs/templates/) to make your life easier
-* Use custom [Plugins](https://jekyllrb.com/docs/plugins/) to generate content specific to your site
+- [Migrate](http://import.jekyllrb.com/docs/home/) from your previous system
+- Learn how the [YAML Front Matter](https://jekyllrb.com/docs/frontmatter/) works
+- Put information on your site with [Variables](https://jekyllrb.com/docs/variables/)
+- Customize the [Permalinks](https://jekyllrb.com/docs/permalinks/) your posts are generated with
+- Use the built-in [Liquid Extensions](https://jekyllrb.com/docs/templates/) to make your life easier
+- Use custom [Plugins](https://jekyllrb.com/docs/plugins/) to generate content specific to your site
 
 ## License
 

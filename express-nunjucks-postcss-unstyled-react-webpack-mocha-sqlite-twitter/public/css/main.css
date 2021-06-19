@@ -1,5 +1,5 @@
-@import 'normalize.css';
-@import 'flexboxgrid.css';
+@import "normalize.css";
+@import "flexboxgrid.css";
 
 :root {
   --success: #29b35b;
@@ -16,7 +16,8 @@ body {
   margin-bottom: 44px;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 

@@ -1,22 +1,17 @@
-Ruby CoffeeScript
-=================
+# Ruby CoffeeScript
 
 Ruby CoffeeScript is a bridge to the official CoffeeScript compiler.
 
     CoffeeScript.compile File.read("script.coffee")
 
-
-Installation
-------------
+## Installation
 
     gem install coffee-script
 
-*Note: This compiler library has replaced the original CoffeeScript
- compiler that was written in Ruby.*
+_Note: This compiler library has replaced the original CoffeeScript
+compiler that was written in Ruby._
 
-
-Dependencies
-------------
+## Dependencies
 
 This library depends on the `coffee-script-source` gem which is
 updated any time a new version of CoffeeScript is released. (The

@@ -1,8 +1,8 @@
-@import 'libs/vars';
-@import 'libs/functions';
-@import 'libs/mixins';
-@import 'libs/vendor';
-@import 'libs/breakpoints';
+@import "libs/vars";
+@import "libs/functions";
+@import "libs/mixins";
+@import "libs/vendor";
+@import "libs/breakpoints";
 
 /*
 	Multiverse by HTML5 UP
@@ -12,29 +12,29 @@
 
 /* Wrapper */
 
-	#wrapper {
-		body.is-preload & {
-			&:before {
-				display: none;
-			}
-		}
-	}
+#wrapper {
+  body.is-preload & {
+    &:before {
+      display: none;
+    }
+  }
+}
 
 /* Main */
 
-	#main {
-		body.is-preload & {
-			.thumb {
-				@include vendor('pointer-events', 'auto');
-				opacity: 1;
-			}
-		}
-	}
+#main {
+  body.is-preload & {
+    .thumb {
+      @include vendor("pointer-events", "auto");
+      opacity: 1;
+    }
+  }
+}
 
 /* Header */
 
-	#header {
-		body.is-preload & {
-			@include vendor('transform', 'none');
-		}
-	}
+#header {
+  body.is-preload & {
+    @include vendor("transform", "none");
+  }
+}

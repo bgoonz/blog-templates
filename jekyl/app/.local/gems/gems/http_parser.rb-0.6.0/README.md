@@ -44,6 +44,7 @@ end
 ```
 
 # Feed raw data from the socket to the parser
+
 `parser << raw_data`
 
 ## Advanced Usage

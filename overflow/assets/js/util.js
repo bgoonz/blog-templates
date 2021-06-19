@@ -1,4 +1,4 @@
-($ => {
+(($) => {
   /**
    * Generate an indented list of links from a nav. Meant for use with panel().
    * @return {jQuery} jQuery object.
@@ -14,11 +14,13 @@
       var target = $this.attr("target");
 
       b.push(
-        `<a class="link depth-${indent}"${typeof target !== "undefined" && target != ""
-    ? ` target="${target}"`
-    : ""}${typeof href !== "undefined" && href != ""
-    ? ` href="${href}"`
-    : ""}><span class="indent-${indent}"></span>${$this.text()}</a>`
+        `<a class="link depth-${indent}"${
+          typeof target !== "undefined" && target != ""
+            ? ` target="${target}"`
+            : ""
+        }${
+          typeof href !== "undefined" && href != "" ? ` href="${href}"` : ""
+        }><span class="indent-${indent}"></span>${$this.text()}</a>`
       );
     });
 
@@ -88,7 +90,7 @@
     // Panel.
 
     // Methods.
-    $this._hide = event => {
+    $this._hide = (event) => {
       // Already hidden? Bail.
       if (!config.target.hasClass(config.visibleClass)) return;
 
@@ -146,12 +148,12 @@
     }
 
     // Event: Touch stuff.
-    $this.on("touchstart", ({originalEvent}) => {
+    $this.on("touchstart", ({ originalEvent }) => {
       $this.touchPosX = originalEvent.touches[0].pageX;
       $this.touchPosY = originalEvent.touches[0].pageY;
     });
 
-    $this.on("touchmove", event => {
+    $this.on("touchmove", (event) => {
       if ($this.touchPosX === null || $this.touchPosY === null) return;
 
       var diffX = $this.touchPosX - event.originalEvent.touches[0].pageX;
@@ -208,12 +210,12 @@
     });
 
     // Event: Prevent certain events inside the panel from bubbling.
-    $this.on("click touchend touchstart touchmove", event => {
+    $this.on("click touchend touchstart touchmove", (event) => {
       event.stopPropagation();
     });
 
     // Event: Hide panel if a child anchor tag pointing to its ID is clicked.
-    $this.on("click", `a[href="#${id}"]`, event => {
+    $this.on("click", `a[href="#${id}"]`, (event) => {
       event.preventDefault();
       event.stopPropagation();
 
@@ -223,12 +225,12 @@
     // Body.
 
     // Event: Hide panel on body click/tap.
-    $body.on("click touchend", event => {
+    $body.on("click touchend", (event) => {
       $this._hide(event);
     });
 
     // Event: Toggle.
-    $body.on("click", `a[href="#${id}"]`, event => {
+    $body.on("click", `a[href="#${id}"]`, (event) => {
       event.preventDefault();
       event.stopPropagation();
 
@@ -239,7 +241,7 @@
 
     // Event: Hide on ESC.
     if (config.hideOnEscape)
-      $window.on("keydown", event => {
+      $window.on("keydown", (event) => {
         if (event.keyCode == 27) $this._hide(event);
       });
 
@@ -318,12 +320,10 @@
       if (i.val() == "") i.hide();
       else x.hide();
 
-      i.on("blur", event => {
+      i.on("blur", (event) => {
         event.preventDefault();
 
-        var x = i
-          .parent()
-          .find(`input[name=${i.attr("name")}-polyfill-field]`);
+        var x = i.parent().find(`input[name=${i.attr("name")}-polyfill-field]`);
 
         if (i.val() == "") {
           i.hide();
@@ -331,19 +331,17 @@
         }
       });
 
-      x.on("focus", event => {
+      x.on("focus", (event) => {
         event.preventDefault();
 
         var i = x
           .parent()
-          .find(
-            `input[name=${x.attr("name").replace("-polyfill-field", "")}]`
-          );
+          .find(`input[name=${x.attr("name").replace("-polyfill-field", "")}]`);
 
         x.hide();
 
         i.show().focus();
-      }).on("keypress", event => {
+      }).on("keypress", (event) => {
         event.preventDefault();
         x.val("");
       });
@@ -365,7 +363,7 @@
             }
           });
       })
-      .on("reset", event => {
+      .on("reset", (event) => {
         event.preventDefault();
 
         $this.find("select").val($("option:first").val());

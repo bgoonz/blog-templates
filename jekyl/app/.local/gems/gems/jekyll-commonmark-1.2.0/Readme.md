@@ -1,6 +1,6 @@
 # jekyll-commonmark
 
-*CommonMark Markdown converter for Jekyll*
+_CommonMark Markdown converter for Jekyll_
 
 [![Gem Version](https://img.shields.io/gem/v/jekyll-commonmark.svg)](https://rubygems.org/gems/jekyll-commonmark)
 [![Build Status](https://img.shields.io/travis/jekyll/jekyll-commonmark/master.svg)](https://travis-ci.org/jekyll/jekyll-commonmark)

@@ -1,16 +1,13 @@
-gemoji
-======
+# gemoji
 
 This library contains character information about native emoji, as well as image
 files for a few custom emoji.
 
-
-Installation
-------------
+## Installation
 
 Add `gemoji` to your Gemfile.
 
-``` ruby
+```ruby
 gem 'gemoji'
 ```
 
@@ -19,18 +16,16 @@ gem 'gemoji'
 To obtain image files as fallbacks for browsers and OS's that don't support
 emoji, run the `gemoji extract` command **on macOS Sierra or later**:
 
-``` sh
+```sh
 bundle exec gemoji extract public/images/emoji
 ```
 
 This will extract images into filenames such as:
 
-* `public/images/emoji/octocat.png`
-* `public/images/emoji/unicode/1f9c0.png` (the `:cheese:` emoji)
+- `public/images/emoji/octocat.png`
+- `public/images/emoji/unicode/1f9c0.png` (the `:cheese:` emoji)
 
-
-Example Rails Helper
---------------------
+## Example Rails Helper
 
 This would allow emojifying content such as: `it's raining :cat:s and :dog:s!`
 
@@ -50,8 +45,7 @@ module EmojiHelper
 end
 ```
 
-Unicode mapping
----------------
+## Unicode mapping
 
 Translate emoji names to unicode and vice versa.
 
@@ -63,8 +57,7 @@ Translate emoji names to unicode and vice versa.
 => "cat"
 ```
 
-Adding new emoji
-----------------
+## Adding new emoji
 
 You can add new emoji characters to the `Emoji.all` list:
 

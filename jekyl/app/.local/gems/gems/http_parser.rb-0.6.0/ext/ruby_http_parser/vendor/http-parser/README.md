@@ -1,5 +1,4 @@
-HTTP Parser
-===========
+# HTTP Parser
 
 This is a parser for HTTP messages written in C. It parses both requests and
 responses. The parser is designed to be used in performance HTTP
@@ -10,26 +9,24 @@ stream (in a web server that is per connection).
 
 Features:
 
-  * No dependencies
-  * Handles persistent streams (keep-alive).
-  * Decodes chunked encoding.
-  * Upgrade support
-  * Defends against buffer overflow attacks.
+- No dependencies
+- Handles persistent streams (keep-alive).
+- Decodes chunked encoding.
+- Upgrade support
+- Defends against buffer overflow attacks.
 
 The parser extracts the following information from HTTP messages:
 
-  * Header fields and values
-  * Content-Length
-  * Request method
-  * Response status code
-  * Transfer-Encoding
-  * HTTP version
-  * Request URL
-  * Message body
+- Header fields and values
+- Content-Length
+- Request method
+- Response status code
+- Transfer-Encoding
+- HTTP version
+- Request URL
+- Message body
 
-
-Usage
------
+## Usage
 
 One `http_parser` object is used per TCP connection. Initialize the struct
 using `http_parser_init()` and set the callbacks. That might look something
@@ -84,9 +81,7 @@ The parser decodes the transfer-encoding for both requests and responses
 transparently. That is, a chunked encoding is decoded before being sent to
 the on_body callback.
 
-
-The Special Problem of Upgrade
-------------------------------
+## The Special Problem of Upgrade
 
 HTTP supports upgrading the connection to a different protocol. An
 increasingly common example of this is the Web Socket protocol which sends
@@ -112,9 +107,7 @@ The user is expected to check if `parser->upgrade` has been set to 1 after
 `http_parser_execute()` returns. Non-HTTP data begins at the buffer supplied
 offset by the return value of `http_parser_execute()`.
 
-
-Callbacks
----------
+## Callbacks
 
 During the `http_parser_execute()` call, the callbacks set in
 `http_parser_settings` will be executed. The parser maintains state and
@@ -123,11 +116,11 @@ save certain data for later usage, you can do that from the callbacks.
 
 There are two types of callbacks:
 
-* notification `typedef int (*http_cb) (http_parser*);`
-    Callbacks: on_message_begin, on_headers_complete, on_message_complete.
-* data `typedef int (*http_data_cb) (http_parser*, const char *at, size_t length);`
-    Callbacks: (requests only) on_uri,
-               (common) on_header_field, on_header_value, on_body;
+- notification `typedef int (*http_cb) (http_parser*);`
+  Callbacks: on_message_begin, on_headers_complete, on_message_complete.
+- data `typedef int (*http_data_cb) (http_parser*, const char *at, size_t length);`
+  Callbacks: (requests only) on_uri,
+  (common) on_header_field, on_header_value, on_body;
 
 Callbacks must return 0 on success. Returning a non-zero value indicates
 error to the parser, making it exit immediately.
@@ -163,9 +156,7 @@ and apply following logic:
     |                        |            | and append callback data to it             |
      ------------------------ ------------ --------------------------------------------
 
-
-Parsing URLs
-------------
+## Parsing URLs
 
 A simplistic zero-copy URL parser is provided as `http_parser_parse_url()`.
 Users of this library may wish to use it to parse URLs constructed from
@@ -173,6 +164,6 @@ consecutive `on_url` callbacks.
 
 See examples of reading in headers:
 
-* [partial example](http://gist.github.com/155877) in C
-* [from http-parser tests](http://github.com/ry/http-parser/blob/37a0ff8928fb0d83cec0d0d8909c5a4abcd221af/test.c#L403) in C
-* [from Node library](http://github.com/ry/node/blob/842eaf446d2fdcb33b296c67c911c32a0dabc747/src/http.js#L284) in Javascript
+- [partial example](http://gist.github.com/155877) in C
+- [from http-parser tests](http://github.com/ry/http-parser/blob/37a0ff8928fb0d83cec0d0d8909c5a4abcd221af/test.c#L403) in C
+- [from Node library](http://github.com/ry/node/blob/842eaf446d2fdcb33b296c67c911c32a0dabc747/src/http.js#L284) in Javascript

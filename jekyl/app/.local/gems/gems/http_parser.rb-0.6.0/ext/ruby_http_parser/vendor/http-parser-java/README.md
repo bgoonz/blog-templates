@@ -1,54 +1,50 @@
-HTTP Parser
-===========
+# HTTP Parser
 
 This is a parser for HTTP written in Java, based quite heavily on
 the Ryan Dahl's C Version: `http-parser` available here:
 
-  http://github.com/ry/http-parser
+http://github.com/ry/http-parser
 
 It parses both requests and responses. The parser is designed to be used
-in performance HTTP applications. 
+in performance HTTP applications.
 
 Features:
 
-  * No dependencies (probably won't be able to keep it up)
-  * Handles persistent streams (keep-alive).
-  * Decodes chunked encoding.
-  * Upgrade support
+- No dependencies (probably won't be able to keep it up)
+- Handles persistent streams (keep-alive).
+- Decodes chunked encoding.
+- Upgrade support
 
 The parser extracts the following information from HTTP messages:
 
-  * Header fields and values
-  * Content-Length
-  * Request method
-  * Response status code
-  * Transfer-Encoding
-  * HTTP version
-  * Request URL
-  * Message body
+- Header fields and values
+- Content-Length
+- Request method
+- Response status code
+- Transfer-Encoding
+- HTTP version
+- Request URL
+- Message body
 
-Building
---------
+## Building
 
 use `ant compile|test|jar`
 
-Usage
------
+## Usage
 
-  TODO: in the present form, usage of the Java version of the parser
-  shouldn't be too difficult to figure out for someone familiar with the
-  C version.
+TODO: in the present form, usage of the Java version of the parser
+shouldn't be too difficult to figure out for someone familiar with the
+C version.
 
-  More documentation will follow shortly, in case you're looking for an
-  easy to use http library, this lib is probably not what you are
-  looking for anyway ...
+More documentation will follow shortly, in case you're looking for an
+easy to use http library, this lib is probably not what you are
+looking for anyway ...
 
-  All text after this paragraph (and most of the text above it) are from
-  the original C version of the README and are currently only here for
-  reference. In case you encounter any difficulties, find bugs, need
-  help or have suggestions, feel free to contact me at
-  (tim.becker@kuriositaet.de).
-
+All text after this paragraph (and most of the text above it) are from
+the original C version of the README and are currently only here for
+reference. In case you encounter any difficulties, find bugs, need
+help or have suggestions, feel free to contact me at
+(tim.becker@kuriositaet.de).
 
 One `http_parser` object is used per TCP connection. Initialize the struct
 using `http_parser_init()` and set the callbacks. That might look something
@@ -103,9 +99,7 @@ The parser decodes the transfer-encoding for both requests and responses
 transparently. That is, a chunked encoding is decoded before being sent to
 the on_body callback.
 
-
-The Special Problem of Upgrade
-------------------------------
+## The Special Problem of Upgrade
 
 HTTP supports upgrading the connection to a different protocol. An
 increasingly common example of this is the Web Socket protocol which sends
@@ -131,9 +125,7 @@ The user is expected to check if `parser->upgrade` has been set to 1 after
 `http_parser_execute()` returns. Non-HTTP data begins at the buffer supplied
 offset by the return value of `http_parser_execute()`.
 
-
-Callbacks
----------
+## Callbacks
 
 During the `http_parser_execute()` call, the callbacks set in
 `http_parser_settings` will be executed. The parser maintains state and
@@ -142,11 +134,11 @@ save certain data for later usage, you can do that from the callbacks.
 
 There are two types of callbacks:
 
-* notification `typedef int (*http_cb) (http_parser*);`
-    Callbacks: on_message_begin, on_headers_complete, on_message_complete.
-* data `typedef int (*http_data_cb) (http_parser*, const char *at, size_t length);`
-    Callbacks: (requests only) on_uri,
-               (common) on_header_field, on_header_value, on_body;
+- notification `typedef int (*http_cb) (http_parser*);`
+  Callbacks: on_message_begin, on_headers_complete, on_message_complete.
+- data `typedef int (*http_data_cb) (http_parser*, const char *at, size_t length);`
+  Callbacks: (requests only) on_uri,
+  (common) on_header_field, on_header_value, on_body;
 
 Callbacks must return 0 on success. Returning a non-zero value indicates
 error to the parser, making it exit immediately.

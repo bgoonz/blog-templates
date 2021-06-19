@@ -4,7 +4,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-($ => {
+(($) => {
   var $window = $(window);
   var $body = $("body");
 
@@ -62,7 +62,9 @@
         // Adjust background position.
         $bg.css(
           "background-position",
-          `center ${-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)}px`
+          `center ${
+            -1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)
+          }px`
         );
       })
       .on("resize.overflow_parallax", () => {

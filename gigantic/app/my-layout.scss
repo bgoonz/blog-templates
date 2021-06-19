@@ -10,7 +10,6 @@ body {
   right: 24px;
   bottom: 24px;
   z-index: 200;
-  
 }
 
 // Theme Builder drawer content
@@ -33,74 +32,74 @@ body {
   .theme-builder-drawer-divider {
     margin: -1px;
   }
-  
+
   .mdc-drawer__content {
     padding: 24px;
-    color: rgba(0, 0, 0, .87);
+    color: rgba(0, 0, 0, 0.87);
   }
-  
+
   h6 {
-    color: rgba(0, 0, 0, .6);
+    color: rgba(0, 0, 0, 0.6);
     margin: 0;
   }
   p {
     margin-block-start: 0.5em;
     margin-block-end: 1.25em;
   }
-  
+
   .mdc-tab {
     font-family: Roboto, sans-serif;
-    @include mdc-tab-active-text-label-color(#6200ee)
-    @include mdc-tab-states-color(#6200ee)
-    @include mdc-tab-text-label-color(black)
-    
-    .mdc-tab-indicator--active {
+    @include mdc-tab-active-text-label-color(#6200ee) @include
+      mdc-tab-states-color(#6200ee) @include mdc-tab-text-label-color(black)
+      .mdc-tab-indicator--active {
       @include mdc-tab-ink-color(#6200ee);
     }
-    
+
     .mdc-tab-indicator {
       @include mdc-tab-indicator-underline-color(#6200ee);
     }
   }
-  
+
   a {
     color: #6200ee;
     text-decoration: none;
     font-family: Roboto, sans-serif;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       text-decoration: underline;
       outline: none;
     }
   }
-  
+
   code {
-    font-family: 'Roboto mono';
+    font-family: "Roboto mono";
     background: $material-color-grey-200;
   }
-  
+
   .mdc-form-field {
     margin: 12px 0;
-    
+
     .rtl-switch {
       @include mdc-switch-toggled-off-color(white);
       @include mdc-switch-toggled-off-track-color(black);
       margin-right: 16px;
     }
   }
-  
+
   .section-header a {
     color: rgba(0, 0, 0, 0.54);
-  
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
       color: rgba(0, 0, 0, 0.87);
     }
   }
 }
-  
+
 .theme-builder-title {
   color: $material-color-grey-800;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: italic;
   font-weight: 800;
 
@@ -118,12 +117,12 @@ body {
   margin-bottom: 0;
 
   &:focus {
-    outline: 1px solid rgba(0, 0, 0, .12);
+    outline: 1px solid rgba(0, 0, 0, 0.12);
   }
 
   &:empty:before {
     content: attr(placeholder);
-    color: rgba(0, 0, 0, .6);
+    color: rgba(0, 0, 0, 0.6);
   }
 }
 
@@ -173,7 +172,7 @@ body {
     background: $material-color-grey-100;
     border: 1px solid $material-color-grey-600;
   }
-  
+
   &.theme-summary-line--typography {
     margin: 0;
   }
@@ -294,18 +293,19 @@ body {
   width: 100%;
   text-align: center;
   background: $material-color-grey-100;
-  color: rgba(0, 0, 0, .87);
+  color: rgba(0, 0, 0, 0.87);
   padding: 10px;
 }
 
 // Breakpoint <1310px
 @media (max-width: 1310px) {
-  .theme-builder-app-bar, .theme-builder-desc-banner {
+  .theme-builder-app-bar,
+  .theme-builder-desc-banner {
     display: block;
   }
-  
+
   .theme-builder-drawer {
-    //  No display by default until JS loads in to prevent jank 
+    //  No display by default until JS loads in to prevent jank
     display: none;
   }
 }
@@ -321,7 +321,7 @@ body {
   &:not(.mdc-top-app-bar--fixed-adjust) {
     padding: 2vh 0;
   }
-  
+
   .column {
     width: 420px;
   }
@@ -348,63 +348,67 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .mdc-image-list {
     width: auto;
   }
-  
+
   .mdc-drawer {
     width: 60%;
     min-width: calc(100% - 56px);
   }
-  
+
   .column {
     width: auto;
     max-width: 420px;
     padding-right: 8px;
     padding-left: 8px;
-  } 
+  }
 }
 
 @media only screen and (max-width: 485px) {
   .column {
     overflow: hidden;
   }
-  
+
   .remix-fab {
-  position: fixed;
-  bottom: 16px;
-  right: auto;
-  margin: 0;
-  z-index: 200;
-  
-}
-  
-   .mdc-dialog .mdc-dialog__surface {
+    position: fixed;
+    bottom: 16px;
+    right: auto;
+    margin: 0;
+    z-index: 200;
+  }
+
+  .mdc-dialog .mdc-dialog__surface {
     max-width: calc(100% - 100px);
   }
 }
-  
+
 .section-header {
   display: flex;
   height: 36px;
   font-family: Roboto, sans-serif;
-  
+
   a {
     display: flex;
     align-items: center;
-    color: if(mdc-theme-contrast-tone($mdc-theme-background) == "dark",
+    color: if(
+      mdc-theme-contrast-tone($mdc-theme-background) == "dark",
       rgba(0, 0, 0, 0.54),
-      rgba(255, 255, 255, 0.54));
-  
-    &:hover, &:focus {
-    color: if(mdc-theme-contrast-tone($mdc-theme-background) == "dark",
-      rgba(0, 0, 0, 0.87),
-      rgba(255, 255, 255, 0.87));
+      rgba(255, 255, 255, 0.54)
+    );
+
+    &:hover,
+    &:focus {
+      color: if(
+        mdc-theme-contrast-tone($mdc-theme-background) == "dark",
+        rgba(0, 0, 0, 0.87),
+        rgba(255, 255, 255, 0.87)
+      );
       text-decoration: none;
     }
   }
-  
+
   .material-icons {
     font-size: 1rem;
     padding: 8px;
@@ -428,126 +432,127 @@ body {
 
   .component-wrapper {
     margin-bottom: 60px;
-  
-    &.text-field-component-wrapper, &.chips-component-wrapper {
+
+    &.text-field-component-wrapper,
+    &.chips-component-wrapper {
       margin-bottom: 96px;
     }
   }
-  
+
   .theme-name {
     margin-bottom: 8px;
   }
-  
+
   .glitch-url {
     font-size: 1rem;
   }
-  
+
   .drawer-content--instructions {
     .mdc-typography--overline {
       font-size: 0.9rem;
     }
-    
+
     .mdc-typography--body2 {
       font-size: 1.2rem;
       line-height: 1.75rem;
     }
   }
-  
+
   .drawer-content--options {
     display: none;
   }
-  
-    // Print adjustments
-  
+
+  // Print adjustments
+
   .button-component-wrapper,
   .fab-component-wrapper {
     margin: 24px 0 44px;
   }
-  
+
   .top-bar-component-wrapper {
     margin: 24px 0 52px;
   }
-  
+
   .switch-component-wrapper {
     margin-left: -8px;
     margin-top: 24px;
   }
-  
+
   .component-wrapper.checkbox-component-wrapper {
     margin-left: -18px;
   }
-  
+
   .component-wrapper.chips-component-wrapper-1 {
     margin: 12px 0 92px -8px;
   }
-  
+
   .select-component {
     margin: 0 20px 40px 20px;
   }
-  
+
   .column-2 {
     transform: translate(-16px);
   }
-  
+
   .card-component-wrapper {
     margin: 16px 0 38px;
   }
-  
+
   .component-wrapper.text-field-component-wrapper-1 {
     margin: 22px 0 90px;
   }
-  
+
   .dialog-component-wrapper {
     margin: 8px 0 52px;
   }
-  
+
   .linear-progress-section {
     margin-top: -8px;
   }
-  
+
   .tabs-section {
     margin-top: -16px;
   }
-  
+
   .radio-row {
     margin-top: -24px;
     margin-bottom: -16px;
   }
-  
+
   .snackbar-section {
     margin-top: -16px;
   }
-  
+
   .image-section {
     margin-top: -4px;
   }
-  
+
   .switch-section {
     margin-top: 0;
   }
-  
+
   .short-app-bar-section,
   .menu-section {
     margin-top: 0px;
   }
-  
+
   .switch-checkbox-row {
     margin-bottom: 16px;
   }
-  
+
   .list-section {
     margin-top: 8px;
   }
-  
+
   .dialog-component-section {
     margin-bottom: 52px;
     margin-top: -16px;
   }
-  
+
   .chips-section {
     margin: 16px 20px -32px 20px;
   }
-  
+
   .image-list-section {
     transform: translateY(-8px);
   }

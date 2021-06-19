@@ -7,7 +7,8 @@
 
 // Checkbox and radio
 
-.mdc-checkbox, .mdc-radio {
+.mdc-checkbox,
+.mdc-radio {
   margin-right: 4px;
 }
 
@@ -130,16 +131,20 @@
 // List
 
 .component-wrapper > .mdc-list {
-  border: 1px solid rgba(0,0,0,.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background: $mdc-theme-background;
 
   .mdc-list-item__graphic {
-    background-color: if(mdc-theme-contrast-tone($mdc-theme-background) == "dark",
+    background-color: if(
+      mdc-theme-contrast-tone($mdc-theme-background) == "dark",
       rgba(0, 0, 0, 0.12),
-      rgba(255, 255, 255, 0.12));
-    color: if(mdc-theme-contrast-tone($mdc-theme-background) == "dark",
+      rgba(255, 255, 255, 0.12)
+    );
+    color: if(
+      mdc-theme-contrast-tone($mdc-theme-background) == "dark",
       rgba(0, 0, 0, 0.68),
-      rgba(255, 255, 255, 0.68));
+      rgba(255, 255, 255, 0.68)
+    );
   }
 }
 
@@ -154,7 +159,8 @@
 }
 
 .component-wrapper {
-  &.button-component-wrapper, &.fab-component-wrapper {
+  &.button-component-wrapper,
+  &.fab-component-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -166,7 +172,8 @@
     @include mdc-rtl-reflexive-box(margin, left, -8px);
   }
 
-  &.checkbox-component-wrapper, &.radio-component-wrapper {
+  &.checkbox-component-wrapper,
+  &.radio-component-wrapper {
     @include mdc-rtl-reflexive-box(margin, left, -10px);
   }
 

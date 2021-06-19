@@ -74,7 +74,7 @@
   z-index: 1000;
 }
 .navbar-dropdown .hamburger-icon {
-  content: '';
+  content: "";
   display: inline-block;
   vertical-align: middle;
   width: 16px;
@@ -84,7 +84,7 @@
   box-shadow: 0 -6px 0 1px #282828, 0 0 0 1px #282828, 0 6px 0 1px #282828;
 }
 
-.dropdown-menu .dropdown-toggle[data-toggle='dropdown-submenu']::after {
+.dropdown-menu .dropdown-toggle[data-toggle="dropdown-submenu"]::after {
   border-bottom: 0.35em solid transparent;
   border-left: 0.35em solid;
   border-right: 0;
@@ -120,7 +120,7 @@
   border-left: 0.35em solid transparent;
   border-bottom: 0;
 }
-.nav-dropdown .link.dropdown-toggle[aria-expanded='true'] {
+.nav-dropdown .link.dropdown-toggle[aria-expanded="true"] {
   margin: 0;
   padding: 0.667em 3.263em 0.667em 1.667em;
 }
@@ -203,7 +203,7 @@
   padding-top: 3.875rem;
 }
 .nav-dropdown-sm::after {
-  content: '';
+  content: "";
   display: block;
   height: 3rem;
   width: 100%;
@@ -220,7 +220,7 @@
   -webkit-transition: all 0.25s ease-out;
   background: #282828;
 }
-.nav-dropdown-sm.collapsing[aria-expanded='false'] {
+.nav-dropdown-sm.collapsing[aria-expanded="false"] {
   transform: translateX(-100%);
   -ms-transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
@@ -253,7 +253,7 @@
 }
 .nav-dropdown-sm .nav-btn::before {
   border-top: 1px dotted rgba(255, 255, 255, 0.1);
-  content: '';
+  content: "";
   left: 0;
   position: absolute;
   top: 0;
@@ -268,7 +268,7 @@
 .nav-dropdown-sm .btn {
   padding: 0.625rem 0;
 }
-.nav-dropdown-sm .dropdown-toggle[data-toggle='dropdown-submenu']::after {
+.nav-dropdown-sm .dropdown-toggle[data-toggle="dropdown-submenu"]::after {
   margin-left: 0.25rem;
   border-top: 0.35em solid;
   border-right: 0.35em solid transparent;
@@ -276,7 +276,7 @@
   border-bottom: 0;
 }
 .nav-dropdown-sm
-  .dropdown-toggle[data-toggle='dropdown-submenu'][aria-expanded='true']::after {
+  .dropdown-toggle[data-toggle="dropdown-submenu"][aria-expanded="true"]::after {
   border-top: 0;
   border-right: 0.35em solid transparent;
   border-left: 0.35em solid transparent;

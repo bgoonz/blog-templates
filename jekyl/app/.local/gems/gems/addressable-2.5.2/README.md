@@ -48,11 +48,9 @@ uri.normalize
 #=> #<Addressable::URI:0xc9a4c8 URI:http://www.xn--8ws00zhy3a.com/>
 ```
 
-
 # URI Templates
 
 For more details, see [RFC 6570](https://www.rfc-editor.org/rfc/rfc6570.txt).
-
 
 ```ruby
 

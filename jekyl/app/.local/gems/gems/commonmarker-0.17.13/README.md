@@ -27,7 +27,7 @@ Or install it yourself as:
 
 Call `render_html` on a string to convert it to HTML:
 
-``` ruby
+```ruby
 require 'commonmarker'
 CommonMarker.render_html('Hi *there*', :DEFAULT)
 # <p>Hi <em>there</em></p>\n
@@ -39,7 +39,7 @@ The second argument is optional--[see below](#options) for more information.
 
 You can also parse a string to receive a `Document` node. You can then print that node to HTML, iterate over the children, and other fun node stuff. For example:
 
-``` ruby
+```ruby
 require 'commonmarker'
 
 doc = CommonMarker.render_doc('*Hello* world', :DEFAULT)
@@ -59,7 +59,7 @@ You can use `walk` or `each` to iterate over nodes:
 - `walk` will iterate on a node and recursively iterate on a node's children.
 - `each` will iterate on a node and its children, but no further.
 
-``` ruby
+```ruby
 require 'commonmarker'
 
 # parse the files specified on the command line
@@ -96,7 +96,7 @@ end
 
 You can also derive a class from CommonMarker's `HtmlRenderer` class. This produces slower output, but is far more customizable. For example:
 
-``` ruby
+```ruby
 class MyHtmlRenderer < CommonMarker::HtmlRenderer
   def initialize
     super
@@ -129,19 +129,19 @@ CommonMarker accepts the same options that CMark does, as symbols. Note that the
 
 ### Parse options
 
-| Name                          | Description
-| ----------------------------- | -----------
-| `:DEFAULT`                    | The default parsing system.
-| `:FOOTNOTES`                  | Parse footnotes.
-| `:LIBERAL_HTML_TAG`           | Support liberal parsing of inline HTML tags.
-| `:SMART`                      | Use smart punctuation (curly quotes, etc.).
-| `:STRIKETHROUGH_DOUBLE_TILDE` | Parse strikethroughs by double tildes (compatibility with [redcarpet](https://github.com/vmg/redcarpet))
-| `:VALIDATE_UTF8`              | Replace illegal sequences with the replacement character `U+FFFD`.
+| Name                          | Description                                                                                              |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `:DEFAULT`                    | The default parsing system.                                                                              |
+| `:FOOTNOTES`                  | Parse footnotes.                                                                                         |
+| `:LIBERAL_HTML_TAG`           | Support liberal parsing of inline HTML tags.                                                             |
+| `:SMART`                      | Use smart punctuation (curly quotes, etc.).                                                              |
+| `:STRIKETHROUGH_DOUBLE_TILDE` | Parse strikethroughs by double tildes (compatibility with [redcarpet](https://github.com/vmg/redcarpet)) |
+| `:VALIDATE_UTF8`              | Replace illegal sequences with the replacement character `U+FFFD`.                                       |
 
 ### Render options
 
 | Name                             | Description                                                    |
-| ------------------               | -----------                                                    |
+| -------------------------------- | -------------------------------------------------------------- |
 | `:DEFAULT`                       | The default rendering system.                                  |
 | `:GITHUB_PRE_LANG`               | Use GitHub-style `<pre lang>` for fenced code blocks.          |
 | `:HARDBREAKS`                    | Treat `\n` as hardbreaks (by adding `<br/>`).                  |
@@ -155,14 +155,14 @@ CommonMarker accepts the same options that CMark does, as symbols. Note that the
 
 To apply a single option, pass it in as a symbol argument:
 
-``` ruby
+```ruby
 CommonMarker.render_doc("\"Hello,\" said the spider.", :SMART)
 # <p>“Hello,” said the spider.</p>\n
 ```
 
 To have multiple options applied, pass in an array of symbols:
 
-``` ruby
+```ruby
 CommonMarker.render_html("\"'Shelob' is my name.\"", [:HARDBREAKS, :SOURCEPOS])
 ```
 
@@ -174,10 +174,10 @@ Both `render_html` and `render_doc` take an optional third argument defining the
 
 The available extensions are:
 
-* `:table` - This provides support for tables.
-* `:strikethrough` - This provides support for strikethroughs.
-* `:autolink` - This provides support for automatically converting URLs to anchor tags.
-* `:tagfilter` - This strips out [several "unsafe" HTML tags](https://github.github.com/gfm/#disallowed-raw-html-extension-) from being used.
+- `:table` - This provides support for tables.
+- `:strikethrough` - This provides support for strikethroughs.
+- `:autolink` - This provides support for automatically converting URLs to anchor tags.
+- `:tagfilter` - This strips out [several "unsafe" HTML tags](https://github.github.com/gfm/#disallowed-raw-html-extension-) from being used.
 
 ## Developing locally
 

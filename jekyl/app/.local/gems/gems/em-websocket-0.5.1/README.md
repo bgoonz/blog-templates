@@ -54,22 +54,22 @@ Early protocols just close the TCP connection, draft 3 introduced a close handsh
 
 The `onclose` callback is passed a hash which may contain following keys (depending on the protocol version):
 
-* `was_clean`: boolean indicating whether the connection was closed via the close handshake.
-* `code`: the close code. There are two special close codes which the server may set (as defined in the WebSocket spec):
-  * 1005: no code was supplied
-  * 1006: abnormal closure (the same as `was_clean: false`)
-* `reason`: the close reason
+- `was_clean`: boolean indicating whether the connection was closed via the close handshake.
+- `code`: the close code. There are two special close codes which the server may set (as defined in the WebSocket spec):
+  - 1005: no code was supplied
+  - 1006: abnormal closure (the same as `was_clean: false`)
+- `reason`: the close reason
 
 Acceptable close codes are defined in the WebSocket rfc (<http://tools.ietf.org/html/rfc6455#section-7.4>). The following codes can be supplies when calling `ws.close(code)`:
 
-* 1000: a generic normal close
-* range 3xxx: reserved for libraries, frameworks, and applications (and can be registered with IANA)
-* range 4xxx: for private use
+- 1000: a generic normal close
+- range 3xxx: reserved for libraries, frameworks, and applications (and can be registered with IANA)
+- range 4xxx: for private use
 
 If unsure use a code in the 4xxx range. em-websocket may also close a connection with one of the following close codes:
 
-* 1002: WebSocket protocol error.
-* 1009: Message too big to process. By default em-websocket will accept frames up to 10MB in size. If a frame is larger than this the connection will be closed without reading the frame data. The limit can be overriden globally (`EM::WebSocket.max_frame_size = bytes`) or on a specific connection (`ws.max_frame_size = bytes`).
+- 1002: WebSocket protocol error.
+- 1009: Message too big to process. By default em-websocket will accept frames up to 10MB in size. If a frame is larger than this the connection will be closed without reading the frame data. The limit can be overriden globally (`EM::WebSocket.max_frame_size = bytes`) or on a specific connection (`ws.max_frame_size = bytes`).
 
 ## Secure server
 
@@ -135,11 +135,11 @@ Using flash emulation does require some minimal support from em-websocket which 
 
 ## Examples & Projects using em-websocket
 
-* [Pusher](http://pusher.com) - Realtime Messaging Service
-* [Livereload](https://github.com/mockko/livereload) - LiveReload applies CSS/JS changes to Safari or Chrome w/o reloading
-* [Twitter AMQP WebSocket Example](http://github.com/rubenfonseca/twitter-amqp-websocket-example)
-* examples/multicast.rb - broadcast all ruby tweets to all subscribers
-* examples/echo.rb - server <> client exchange via a websocket
+- [Pusher](http://pusher.com) - Realtime Messaging Service
+- [Livereload](https://github.com/mockko/livereload) - LiveReload applies CSS/JS changes to Safari or Chrome w/o reloading
+- [Twitter AMQP WebSocket Example](http://github.com/rubenfonseca/twitter-amqp-websocket-example)
+- examples/multicast.rb - broadcast all ruby tweets to all subscribers
+- examples/echo.rb - server <> client exchange via a websocket
 
 # License
 
