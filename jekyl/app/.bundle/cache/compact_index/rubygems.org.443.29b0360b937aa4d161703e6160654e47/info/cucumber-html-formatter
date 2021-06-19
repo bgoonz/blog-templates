@@ -1,5 +1,0 @@
----
-4.3.0 cucumber-messages:>= 10.0.3&~> 10.0|checksum:d48e09d0a98ad2a63eb1d71e45c52b940edd274d3d9f73630baa161a54295208,ruby:>= 2.3
-5.0.0 cucumber-messages:>= 11.1.1&~> 11.1|checksum:397bac8f37b50f9d6d5ba9dfbdb9ccfa5c784cce96f109a6e3f2fd31189525ff,ruby:>= 2.3
-6.0.1 cucumber-messages:>= 12.0.0&~> 12.0|checksum:3b6cd4386c12bbf091f89f42194b2ca1153eeca36fbe61058faeb7be6566bc1f,ruby:>= 2.3
-6.0.2 cucumber-messages:>= 12.1.1&~> 12.1|checksum:bcd499c31f54ca868c14a237eab9ffd10317f44558d1fef2505cbcb76ce6bbbc,ruby:>= 2.3

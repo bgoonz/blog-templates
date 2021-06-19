@@ -26,7 +26,10 @@
   > :not(caption) > * > * {
     padding: $table-cell-padding-y $table-cell-padding-x;
     background-color: var(--bs-table-bg);
-    background-image: linear-gradient(var(--bs-table-accent-bg), var(--bs-table-accent-bg));
+    background-image: linear-gradient(
+      var(--bs-table-accent-bg),
+      var(--bs-table-accent-bg)
+    );
     border-bottom-width: $table-border-width;
   }
 
@@ -44,7 +47,6 @@
   }
 }
 
-
 //
 // Change placement of captions with a class
 //
@@ -52,7 +54,6 @@
 .caption-top {
   caption-side: top;
 }
-
 
 //
 // Condensed table w/ half padding
@@ -64,7 +65,6 @@
     padding: $table-cell-padding-y-sm $table-cell-padding-x-sm;
   }
 }
-
 
 // Border versions
 //
@@ -123,7 +123,6 @@
     color: var(--bs-table-hover-color);
   }
 }
-
 
 // Table variants
 //

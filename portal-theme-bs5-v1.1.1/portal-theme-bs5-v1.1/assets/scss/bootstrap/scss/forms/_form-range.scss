@@ -6,7 +6,10 @@
 
 .form-range {
   width: 100%;
-  height: add($form-range-thumb-height, $form-range-thumb-focus-box-shadow-width * 2);
+  height: add(
+    $form-range-thumb-height,
+    $form-range-thumb-focus-box-shadow-width * 2
+  );
   padding: 0; // Need to reset padding
   background-color: transparent;
   appearance: none;
@@ -16,9 +19,15 @@
 
     // Pseudo-elements must be split across multiple rulesets to have an effect.
     // No box-shadow() mixin for focus accessibility.
-    &::-webkit-slider-thumb { box-shadow: $form-range-thumb-focus-box-shadow; }
-    &::-moz-range-thumb     { box-shadow: $form-range-thumb-focus-box-shadow; }
-    &::-ms-thumb            { box-shadow: $form-range-thumb-focus-box-shadow; }
+    &::-webkit-slider-thumb {
+      box-shadow: $form-range-thumb-focus-box-shadow;
+    }
+    &::-moz-range-thumb {
+      box-shadow: $form-range-thumb-focus-box-shadow;
+    }
+    &::-ms-thumb {
+      box-shadow: $form-range-thumb-focus-box-shadow;
+    }
   }
 
   &::-moz-focus-outer {
@@ -83,7 +92,7 @@
     height: $form-range-thumb-height;
     margin-top: 0; // Edge specific
     margin-right: $form-range-thumb-focus-box-shadow-width; // Workaround that overflowed box-shadow is hidden.
-    margin-left: $form-range-thumb-focus-box-shadow-width;  // Workaround that overflowed box-shadow is hidden.
+    margin-left: $form-range-thumb-focus-box-shadow-width; // Workaround that overflowed box-shadow is hidden.
     @include gradient-bg($form-range-thumb-bg);
     border: $form-range-thumb-border;
     @include border-radius($form-range-thumb-border-radius);

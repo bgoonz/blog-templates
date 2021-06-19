@@ -4,8 +4,12 @@
   --bs-gutter-x: #{$gutter};
 
   width: 100%;
-  padding-right: calc(var(--bs-gutter-x) / 2); // stylelint-disable-line function-disallowed-list
-  padding-left: calc(var(--bs-gutter-x) / 2); // stylelint-disable-line function-disallowed-list
+  padding-right: calc(
+    var(--bs-gutter-x) / 2
+  ); // stylelint-disable-line function-disallowed-list
+  padding-left: calc(
+    var(--bs-gutter-x) / 2
+  ); // stylelint-disable-line function-disallowed-list
   margin-right: auto;
   margin-left: auto;
 }

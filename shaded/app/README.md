@@ -1,4 +1,5 @@
 # Node Sass Demo
+
 This app demonstrates using the node-sass-middleware module to serve scss files.
 
 It's based on Ken Wheeler's responsive [Sass demo](https://scotch.io/tutorials/getting-started-with-sass).

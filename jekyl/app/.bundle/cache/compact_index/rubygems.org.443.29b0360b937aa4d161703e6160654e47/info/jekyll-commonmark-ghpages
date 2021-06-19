@@ -1,8 +1,0 @@
----
-0.1.0 commonmarker:~> 0.17.6,jekyll-commonmark:~> 1|checksum:94e532a21db8c8ff3fa1dc5aa38e1ca4a87ba2176702d8042fbd0c10eb24996a
-0.1.1 commonmarker:~> 0.17.6,jekyll-commonmark:~> 1,rouge:~> 2|checksum:66a753b92703b0ec3bc03b024fca566c51726f77de24f166e61de8f1bd66c6d4
-0.1.2 commonmarker:~> 0.17.6,jekyll-commonmark:~> 1,rouge:~> 2|checksum:7a3a2a00d24a4d09b74c4213b8a1b5c8e12d868cdb16af6023fd7544d0901d4e
-0.1.3 commonmarker:~> 0.17.6,jekyll-commonmark:~> 1,rouge:~> 2|checksum:005d491c4d0cabefef5b1da25a8162aadb3b55e77757401145c0f8339a1506c4
-0.1.4 commonmarker:~> 0.17.6,jekyll-commonmark:~> 1,rouge:~> 2|checksum:126ab7e132e7f0d285a465e11e25fcda6b4324a693605ca4df6b6ff0681ed213
-0.1.5 commonmarker:~> 0.17.6,jekyll-commonmark:~> 1,rouge:~> 2|checksum:109ef9caec4e7966877af36359a542ab1611fd39224eba79db2dd9ecb9201414
-0.1.6 commonmarker:~> 0.17.6,jekyll-commonmark:~> 1.2,rouge:< 4.0&>= 2.0|checksum:e76e7609fd9aeb9c9556bd779caa48d22d9a0fc6fd83621484e08a1fe39917ae

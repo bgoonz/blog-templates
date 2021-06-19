@@ -1,7 +1,0 @@
----
-0.0.1 jekyll:~> 3.3|checksum:0d13b5bed0bb1fed3e743896bf04b08f0b51aa2e7e0f304634952da1cb568bd6
-0.0.2 jekyll:~> 3.3|checksum:b96bb03eda03f670997fab24826d17cb1d414838045ce8064545d70add4d5e9f
-0.0.3 jekyll:~> 3.3|checksum:b99d1efafff28d4a29e1b097ac1973ad65ab0fcdc2d627227142fb761a2f5c5f
-0.0.4 jekyll:~> 3.3|checksum:fa62c5dc12ea768ec7c2eeef4c9619ecc24bd329e55a7c2ac4af7ba89a430b2f
-0.1.0 jekyll:~> 3.5,jekyll-seo-tag:~> 2.0|checksum:e7bc372febc58793ade11d69c2eb08d23a836946eb8e691824931046c728e9fa
-0.1.1 jekyll:~> 3.5,jekyll-seo-tag:~> 2.0|checksum:f72ecc2e77623c02c0f7ed930263e0c1f669ff8fe86e52431c0d3bc9465076c9

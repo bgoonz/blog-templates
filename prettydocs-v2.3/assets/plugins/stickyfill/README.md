@@ -11,11 +11,11 @@ Check out [the demo](http://wd.dizaina.net/en/scripts/stickyfill/) and [use case
 - disables itself in older IEs and in browsers with native `position: sticky` support,
 - mimics original `position: sticky` behavior:
 
-    - uses parent node as a boundary box,
-    - behaves nicely with horizontal page scrolling,
-    - only works on elements with specified `top`,
-    - mimics native `top` and `margin-bottom` behavior,
-    - ~~works with table cells~~ removed for consistency until Firefox [makes a native implementation](https://bugzilla.mozilla.org/show_bug.cgi?id=975644)
+  - uses parent node as a boundary box,
+  - behaves nicely with horizontal page scrolling,
+  - only works on elements with specified `top`,
+  - mimics native `top` and `margin-bottom` behavior,
+  - ~~works with table cells~~ removed for consistency until Firefox [makes a native implementation](https://bugzilla.mozilla.org/show_bug.cgi?id=975644)
 
 ## What it doesn't
 
@@ -23,7 +23,7 @@ Check out [the demo](http://wd.dizaina.net/en/scripts/stickyfill/) and [use case
 - doesn't work in overflowed blocks,
 - doesn't parse your CSS! Launch it manually.
 
-----
+---
 
 <p align="center">
     <a href="#installation">Installation</a>&nbsp;&nbsp;
@@ -36,7 +36,7 @@ Check out [the demo](http://wd.dizaina.net/en/scripts/stickyfill/) and [use case
     <a href="#using-stickyfill">Buy me a beer</a>
 </p>
 
-----
+---
 
 ## Installation
 
@@ -73,16 +73,14 @@ Include it on your page:
 First things first, make sure your stickies work in the [browsers that support them natively](http://caniuse.com/#feat=css-sticky), e.g.:
 
 ```html
-<div class="sticky">
-    ...
-</div>
+<div class="sticky">...</div>
 ```
 
 ```css
 .sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 ```
 
@@ -91,14 +89,14 @@ Then apply the polyfill:
 JS:
 
 ```js
-var elements = document.querySelectorAll('.sticky');
+var elements = document.querySelectorAll(".sticky");
 Stickyfill.add(elements);
 ```
 
 or JS + jQuery:
 
 ```js
-var elements = $('.sticky');
+var elements = $(".sticky");
 Stickyfill.add(elements);
 ```
 
@@ -107,8 +105,8 @@ Also worth having a clearfix:
 ```css
 .sticky:before,
 .sticky:after {
-    content: '';
-    display: table;
+  content: "";
+  display: table;
 }
 ```
 
