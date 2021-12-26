@@ -1,25 +1,25 @@
 /* -- ELEMENT STYLES -- */
 
-body {  
+body {
   font-family: arial, helvetica, arial, sans-serif;
   font-size: 80%;
   color: #234163;
-  background-color: #EEF3FA;
+  background-color: #eef3fa;
   margin: 30px;
 }
 
 a {
-  color: #5A799D;
+  color: #5a799d;
 }
 
 a:hover {
-  text-decoration:none;
-  background-color: #EEEEEE;
+  text-decoration: none;
+  background-color: #eeeeee;
 }
 
 acronym {
   cursor: help;
-  border-bottom: 1px dashed #AAAAAA;
+  border-bottom: 1px dashed #aaaaaa;
 }
 
 img {
@@ -27,32 +27,30 @@ img {
 }
 
 ul {
-  list-style-image: url(../images/bullet.gif);  
+  list-style-image: url(../images/bullet.gif);
 }
-
 
 /* -- MAIN CONTAINER -- */
 
 #layoutBox {
   float: left;
-  border: 1px solid #5A799D;
-  background-color: #FFFFFF;
-  padding: 10px;  
+  border: 1px solid #5a799d;
+  background-color: #ffffff;
+  padding: 10px;
 }
-
 
 /* -- HEADER CONTAINER -- */
 
 #headerBox {
   height: 4em;
-  border: 1px solid #5A799D;
-  background: #7897BB url(../images/hdr_bg.jpg) repeat-x bottom;
+  border: 1px solid #5a799d;
+  background: #7897bb url(../images/hdr_bg.jpg) repeat-x bottom;
 }
 
 #headerLeftBox {
   float: left;
   width: 40%;
-  height:4em;
+  height: 4em;
   background: url(../images/hdr_left.jpg) no-repeat bottom left;
   text-align: right;
 }
@@ -63,8 +61,7 @@ ul {
   height: 4em;
   background: url(../images/hdr_right.jpg) no-repeat bottom right;
 }
- 
- 
+
 /* -- HEADER STYLES -- */
 
 .title {
@@ -72,15 +69,14 @@ ul {
   font-size: 280%;
   font-weight: bold;
   font-style: italic;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 0.9em;
 }
 
 .subTitle {
   font-size: 90%;
-  color: #5A799D;
+  color: #5a799d;
 }
-
 
 /* -- MENU CONTAINER -- */
 
@@ -88,7 +84,7 @@ ul {
   float: left;
   width: 15em;
   margin: 10px 0 0 0;
-  border-right: 1px solid #5A799D;  
+  border-right: 1px solid #5a799d;
   text-align: left;
 }
 
@@ -100,12 +96,11 @@ ul {
   margin-top: 30px;
 }
 
-
 /* -- CONTENT CONTAINER -- */
 
 #mainContent {
   margin: 10px 0 0 16em;
-  border-left: 1px solid #5A799D;
+  border-left: 1px solid #5a799d;
 }
 
 #mainContent br {
@@ -127,39 +122,45 @@ ul {
   display: none;
 }
 
-
 /* -- HEADER/FOOTER STYLES (menuBox & mainContent) -- */
 
-#mainContent h1, #menuBox h1, .menuFooter, .footer {
+#mainContent h1,
+#menuBox h1,
+.menuFooter,
+.footer {
   font-family: times new roman, helvetica, arial, sans-serif;
   font-size: 125%;
   font-weight: bold;
   letter-spacing: 0.05em;
-  color: #5A799D;
-  background: #EEF3FA url(../images/hdr_icon.gif) no-repeat bottom right;
-  border-top: 1px solid #5A799D;
-  border-bottom: 1px solid #5A799D;  
-  display: block; 
+  color: #5a799d;
+  background: #eef3fa url(../images/hdr_icon.gif) no-repeat bottom right;
+  border-top: 1px solid #5a799d;
+  border-bottom: 1px solid #5a799d;
+  display: block;
   padding: 2px 2px 2px 10px;
   margin: 0 0 10px 0;
 }
 
-#mainContent h1, .footer {
-  border-right: 1px solid #5A799D;
-} 
+#mainContent h1,
+.footer {
+  border-right: 1px solid #5a799d;
+}
 
-.menuFooter, .footer {
+.menuFooter,
+.footer {
   margin-bottom: 0px;
 }
 
-#menuBox h1, .menuFooter {
-  border-left: 1px solid #5A799D;
+#menuBox h1,
+.menuFooter {
+  border-left: 1px solid #5a799d;
 }
 
-#mainContent h2, #menuBox h2 {
+#mainContent h2,
+#menuBox h2 {
   font-size: 80%;
   font-weight: bold;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   display: block;
   padding: 0px 0px 0px 5px;
   margin-bottom: 0px;
@@ -169,26 +170,27 @@ ul {
   margin-left: 10px;
 }
 
-#mainContent h1, #mainContent h2, .footer {
-  clear: right;  /* Set to both if you don't care about Internet Explorer */
+#mainContent h1,
+#mainContent h2,
+.footer {
+  clear: right; /* Set to both if you don't care about Internet Explorer */
 }
 
 .footer {
   font-family: arial, helvetica, arial, sans-serif;
   font-size: 80%;
   font-weight: normal;
-  border-right: 1px solid #5A799D;
+  border-right: 1px solid #5a799d;
   border-left: 0px;
 }
 
 .footer a:hover {
-  background-color: #D6E1F1;
+  background-color: #d6e1f1;
 }
 
 .footer br {
   margin: -20px;
 }
-
 
 /* -- MENU/NEWS ITEM STYLES -- */
 
@@ -203,23 +205,24 @@ ul {
 }
 
 .menuGroup a {
-  color: #35567C;
+  color: #35567c;
   text-indent: 3em;
   text-decoration: none;
   margin-bottom: 2px;
-  display: block;  
+  display: block;
 }
 
 .menuGroup a:hover {
-  color: #FFFFFF;
-  background-color: #5A799D;
+  color: #ffffff;
+  background-color: #5a799d;
 }
 
 /* -- IMAGE STYLES -- */
 
-.imgRight, .imgLeft {
+.imgRight,
+.imgLeft {
   padding: 10px 5px 5px 10px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
 
 .imgRight {

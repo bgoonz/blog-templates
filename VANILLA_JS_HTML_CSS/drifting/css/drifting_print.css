@@ -1,20 +1,20 @@
 /* -- ELEMENT STYLES -- */
 
-body {  
+body {
   font-family: arial, helvetica, arial, sans-serif;
   font-size: 80%;
   color: #234163;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin: 2px;
 }
 
 a {
-  color: #5A799D;
+  color: #5a799d;
 }
 
 a:hover {
-  text-decoration:none;
-  background-color: #EEEEEE;
+  text-decoration: none;
+  background-color: #eeeeee;
 }
 
 acronym {
@@ -27,32 +27,30 @@ img {
 }
 
 ul {
-  list-style-image: url(../images/bullet.gif);  
+  list-style-image: url(../images/bullet.gif);
 }
-
 
 /* -- MAIN CONTAINER -- */
 
 #layoutBox {
   float: left;
-  border: 1px solid #5A799D;
-  background-color: #FFFFFF;
-  padding: 10px;  
+  border: 1px solid #5a799d;
+  background-color: #ffffff;
+  padding: 10px;
 }
-
 
 /* -- HEADER CONTAINER -- */
 
 #headerBox {
   height: 4em;
-  border: 1px solid #5A799D;
-  background: #7897BB url(../images/hdr_bg.jpg) repeat-x bottom;
+  border: 1px solid #5a799d;
+  background: #7897bb url(../images/hdr_bg.jpg) repeat-x bottom;
 }
 
 #headerLeftBox {
   float: left;
   width: 40%;
-  height:4em;
+  height: 4em;
   background: url(../images/hdr_left.jpg) no-repeat bottom left;
   text-align: right;
 }
@@ -63,8 +61,7 @@ ul {
   height: 4em;
   background: url(../images/hdr_right.jpg) no-repeat bottom right;
 }
- 
- 
+
 /* -- HEADER STYLES -- */
 
 .title {
@@ -72,22 +69,20 @@ ul {
   font-size: 280%;
   font-weight: bold;
   font-style: italic;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 0.9em;
 }
 
 .subTitle {
   font-size: 90%;
-  color: #5A799D;
+  color: #5a799d;
 }
-
 
 /* -- MENU CONTAINER (don't display for print) -- */
 
 #menuBox {
   display: none;
 }
-
 
 /* -- CONTENT CONTAINER -- */
 
@@ -103,39 +98,42 @@ ul {
   padding: 0px 5px 2px 10px;
 }
 
-.spacer{
+.spacer {
   height: 1px;
   clear: both;
 }
 
-
 /* -- HEADER/FOOTER STYLES (menuBox & mainContent) -- */
 
-#mainContent h1, #menuBox h1, .menuFooter, .footer {
+#mainContent h1,
+#menuBox h1,
+.menuFooter,
+.footer {
   font-family: times new roman, helvetica, arial, sans-serif;
   font-size: 125%;
   font-weight: bold;
   letter-spacing: 0.05em;
-  color: #5A799D;
-  background: #EEF3FA url(../images/hdr_icon.gif) no-repeat bottom right;
-  border: 1px solid #5A799D;
-  display: block; 
+  color: #5a799d;
+  background: #eef3fa url(../images/hdr_icon.gif) no-repeat bottom right;
+  border: 1px solid #5a799d;
+  display: block;
   padding: 2px 2px 2px 10px;
   margin: 0 0 10px 0;
 }
 
-#mainContent h1, .footer {
-  border-right: 1px solid #5A799D;
-} 
+#mainContent h1,
+.footer {
+  border-right: 1px solid #5a799d;
+}
 
 #menuBox h1 {
-  border-left: 1px solid #5A799D;
+  border-left: 1px solid #5a799d;
 }
 
 #mainContent h2 {
   font-size: 80%;
   font-weight: bold;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   display: block;
   padding: 0px 0px 0px 5px;
   margin-bottom: 0px;
@@ -145,8 +143,10 @@ ul {
   margin-left: 10px;
 }
 
-#mainContent h1, #mainContent h2, .footer {
-  clear: right;  /* Set to both if you don't care about Internet Explorer */
+#mainContent h1,
+#mainContent h2,
+.footer {
+  clear: right; /* Set to both if you don't care about Internet Explorer */
 }
 
 .footer {
@@ -156,7 +156,7 @@ ul {
 }
 
 .footer a:hover {
-  background-color: #D6E1F1;
+  background-color: #d6e1f1;
 }
 
 .footer br {
@@ -165,9 +165,10 @@ ul {
 
 /* -- IMAGE STYLES -- */
 
-.imgRight, .imgLeft {
+.imgRight,
+.imgLeft {
   padding: 10px 5px 5px 10px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
 
 .imgRight {
