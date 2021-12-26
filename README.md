@@ -1,6 +1,6 @@
 # Blog Templates
 
-
+![Img](./blog-templates.png)
 
 
 1. - [ ] [./full-page-video-carousel/index.html](./full-page-video-carousel/index.html)
