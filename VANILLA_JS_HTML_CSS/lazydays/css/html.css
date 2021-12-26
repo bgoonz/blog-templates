@@ -19,50 +19,56 @@ body {
   line-height: 170%;
 
   background: #666 url(../images/bg/header.jpg) repeat-x top left;
-  color: #EEE;
+  color: #eee;
 }
 
-h1 {   
+h1 {
   clear: both;
   font: 700 2.5em "trebuchet ms", serif;
-  color: #FFF;
+  color: #fff;
 }
 
 h2 {
   font: 400 1.5em "trebuchet ms", serif;
-  color: #9FF3FF;
+  color: #9ff3ff;
 }
 
 h2 a {
-  color: #29E3FF;
+  color: #29e3ff;
 }
 
 h2 a:hover {
-  color: #FFF;
+  color: #fff;
 }
 
 h3 {
   font: 400 1.3em "trebuchet ms", serif;
-  color: #F8D766;
+  color: #f8d766;
 }
 
 h4 {
   font: 700 1.2em "trebuchet ms", serif;
-  color: #F39F01;
+  color: #f39f01;
 }
 
 h5 {
   font: 700 1.1em "trebuchet ms", serif;
-  color: #F17400;
+  color: #f17400;
 }
 
 h6 {
   font: 700 1em "trebuchet ms", serif;
-  color: #FF4B33;
+  color: #ff4b33;
 }
 
-
-h1, h2, h3, h4, h5, h6, p, dl {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl {
   margin: 0;
   padding: 10px 15px;
 }
@@ -71,7 +77,7 @@ h1, h2, h3, h4, h5, h6, p, dl {
    If the leftmost column has class gradient applied to it, 
    this class isn't required. */
 .leftColumn h1,
-.leftColumn h2, 
+.leftColumn h2,
 .leftColumn h3,
 .leftColumn h4,
 .leftColumn h5,
@@ -82,7 +88,7 @@ h1, h2, h3, h4, h5, h6, p, dl {
 }
 
 a {
-  color: #8BE6FA;
+  color: #8be6fa;
 }
 
 /* Uncomment this if you would like a visited link style 
@@ -91,24 +97,25 @@ a:visited {
 } */
 
 a:hover {
-  color: #FFF;
+  color: #fff;
 }
 
 b {
-  color: #FFF;
+  color: #fff;
 }
 
-ol, ul {
+ol,
+ul {
   margin: 10px 30px;
   padding: 0 30px;
 }
 
 ol {
-  color: #FC0;
+  color: #fc0;
 }
 
 ol span {
-  color: #EEE;
+  color: #eee;
 }
 
 ul {
@@ -116,7 +123,7 @@ ul {
 }
 
 del {
-  color: #AAA;
+  color: #aaa;
 }
 
 code {
@@ -124,11 +131,11 @@ code {
   padding: 10px;
   display: block;
   overflow: auto;
-  
+
   font: 400 1em courier, monospace;
   line-height: 120%;
   white-space: pre;
-  
+
   background: #444;
 }
 
@@ -143,16 +150,13 @@ acronym {
 
 dt {
   font-weight: bold;
-  color: #FFB323;
+  color: #ffb323;
 }
 
 dd {
   margin-left: 0;
-  padding-left: 45px; 
+  padding-left: 45px;
 }
-
-
-
 
 /**************************************************************
    Form Elements
@@ -168,7 +172,7 @@ select {
   padding: 2px;
   font: 400 1em verdana, sans-serif;
   color: #444;
-  background: #EEE;
+  background: #eee;
   border: 1px solid #444;
 }
 
@@ -179,8 +183,8 @@ textarea:hover,
 select:focus,
 select:hover {
   color: #000;
-  background: #E4F7FA;
-  border: 1px solid #00DFFF;
+  background: #e4f7fa;
+  border: 1px solid #00dfff;
 }
 
 input.button {
@@ -189,15 +193,11 @@ input.button {
   font: 400 1.1em "trebuchet ms", serif;
 
   color: #555;
-  background: #9FF3FF;
+  background: #9ff3ff;
   border-width: 1px;
   border-style: solid;
-  border-color: #FFF #00DFFF #00DFFF #FFF;
+  border-color: #fff #00dfff #00dfff #fff;
 }
-
-
-
-
 
 /**************************************************************
    Blockquote and included icons
@@ -206,11 +206,11 @@ input.button {
 blockquote {
   margin: 10px 15px;
   padding-left: 27px;
-  
-  background-color: #444;  
+
+  background-color: #444;
   background-image: url(../images/icons/quote.gif);
   background-repeat: no-repeat;
-  background-position: 5px 50%;  
+  background-position: 5px 50%;
 }
 
 blockquote.exclamation {
@@ -225,28 +225,24 @@ blockquote.go {
   background-image: url(../images/icons/go.gif);
 }
 
-
-
-
-
 /**************************************************************
    Images
  **************************************************************/
 
 img.floatRight {
-  margin: 5px 0px 10px 15px;  
+  margin: 5px 0px 10px 15px;
 }
 
 img.floatLeft {
   margin: 5px 15px 10px 0px;
 }
 
-a img {  
-  border: 2px solid #8BE6FA;
+a img {
+  border: 2px solid #8be6fa;
 }
 
-a:hover img {  
+a:hover img {
   /* Fixes IE bug - IE doesn't correctly apply the style on a:hover so need to mask it */
-  border: 2px solid #FFF !important;
-  border: 2px solid #8BE6FA;
+  border: 2px solid #fff !important;
+  border: 2px solid #8be6fa;
 }

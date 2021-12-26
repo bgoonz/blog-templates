@@ -1,6 +1,6 @@
 .sl-slider-wrapper {
-	overflow: visible !important;
-	margin: 0 auto;
+  overflow: visible !important;
+  margin: 0 auto;
 }
 
 /* Slide wrapper and slides */
@@ -9,24 +9,24 @@
 .sl-slide,
 .sl-slides-wrapper,
 .sl-slide-inner {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	background: #fff;
-} 
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
 
 .demo-1 .sl-slide blockquote {
-	width: 50%;
-	left: 25%;
+  width: 50%;
+  left: 25%;
 }
 
 .demo-2 .bg-img {
-	padding: 0;
-	top: 0;
-	left: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
 }
 
 .nav-arrows,
 .nav-dots {
-	display: none;
+  display: none;
 }

@@ -4,7 +4,6 @@
  * MODIF: 2003-Apr-30 19:15 +0800     *
  **************************************/
 
-
 /* ##### Common Styles ##### */
 
 body {
@@ -16,12 +15,15 @@ body {
   padding: 0;
 }
 
-acronym, .titleTip {
+acronym,
+.titleTip {
   font-style: italic;
   border-bottom: none;
 }
 
-acronym:after, .titleTip:after {  /* Prints titles after the acronyms/titletips. Doesn't work in MSIE */
+acronym:after,
+.titleTip:after {
+  /* Prints titles after the acronyms/titletips. Doesn't work in MSIE */
   content: "(" attr(title) ")";
   font-size: 90%;
   font-style: normal;
@@ -34,7 +36,8 @@ a {
   text-decoration: none;
 }
 
-a[href]:after {  /* Prints the links' URIs after the links' texts. Doesn't work in MSIE */
+a[href]:after {
+  /* Prints the links' URIs after the links' texts. Doesn't work in MSIE */
   content: "<" attr(href) ">";
   font-size: 90%;
   padding-left: 1ex;
@@ -81,7 +84,6 @@ dd {
   display: none;
 }
 
-
 /* ##### Header ##### */
 
 #header {
@@ -124,13 +126,11 @@ dd {
   display: none;
 }
 
-
 /* ##### Side Menu ##### */
 
 #side-bar {
   display: none !important;
 }
-
 
 /* ##### Main Copy ##### */
 
@@ -175,12 +175,14 @@ h2 a:after {
   display: inline;
 }
 
-.newsDate:before {  /* Prints an '[' before the news item's date. Doesn't work in MSIE */
+.newsDate:before {
+  /* Prints an '[' before the news item's date. Doesn't work in MSIE */
   content: "[";
   font-style: normal;
 }
 
-.newsDate:after {  /* Prints a ']' after the news item's date. Doesn't work in MSIE */
+.newsDate:after {
+  /* Prints a ']' after the news item's date. Doesn't work in MSIE */
   content: "]";
   font-style: normal;
 }
@@ -199,11 +201,14 @@ h2 a:after {
   font-variant: small-caps;
 }
 
-.quarter, .oneThird, .half, .twoThirds, .fullWidth {
+.quarter,
+.oneThird,
+.half,
+.twoThirds,
+.fullWidth {
   margin: 0;
   padding: 0;
 }
-
 
 /* ##### Footer ##### */
 

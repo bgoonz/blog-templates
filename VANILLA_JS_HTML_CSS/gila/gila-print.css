@@ -4,7 +4,6 @@
  * MODIF: 2003-Apr-30 19:09 +0800 *
  **********************************/
 
-
 /* ##### Common Styles ##### */
 
 body {
@@ -16,12 +15,15 @@ body {
   padding: 0;
 }
 
-acronym, .titleTip {
+acronym,
+.titleTip {
   font-style: italic;
   border-bottom: none;
 }
 
-acronym:after, .titleTip:after {  /* Prints titles after the acronyms/titletips. Doesn't work in MSIE */
+acronym:after,
+.titleTip:after {
+  /* Prints titles after the acronyms/titletips. Doesn't work in MSIE */
   content: "(" attr(title) ")";
   font-size: 90%;
   font-style: normal;
@@ -31,7 +33,6 @@ acronym:after, .titleTip:after {  /* Prints titles after the acronyms/titletips.
 .doNotPrint {
   display: none !important;
 }
-
 
 /* ##### Header ##### */
 
@@ -59,13 +60,11 @@ acronym:after, .titleTip:after {  /* Prints titles after the acronyms/titletips.
   display: none;
 }
 
-
 /* ##### Side Bars ##### */
 
 #side-bar {
   display: none;
 }
-
 
 /* ##### Main Copy ##### */
 
@@ -88,7 +87,8 @@ acronym:after, .titleTip:after {  /* Prints titles after the acronyms/titletips.
   text-decoration: none;
 }
 
-#main-copy a:after {  /* Prints the links' URIs after the links' texts. Doesn't work in MSIE */
+#main-copy a:after {
+  /* Prints the links' URIs after the links' texts. Doesn't work in MSIE */
   content: "<" attr(href) ">";
   font-size: 90%;
   padding-left: 1ex;
@@ -114,7 +114,6 @@ dd {
   margin: 0 0 2ex 1.5em;
   padding: 0;
 }
-
 
 /* ##### Footer ##### */
 

@@ -4,14 +4,13 @@
  * MODIF: 2003-Apr-30 19:09 +0800 *
  **********************************/
 
-
 /* ##### Common Styles ##### */
 
 body {
   color: black;
-  background-color: rgb(243,242,235);
+  background-color: rgb(243, 242, 235);
   font-family: verdana, helvetica, arial, sans-serif;
-  font-size: 73%;  /* Enables font size scaling in MSIE */
+  font-size: 73%; /* Enables font size scaling in MSIE */
   margin: 0;
   padding: 0;
 }
@@ -20,8 +19,9 @@ html > body {
   font-size: 9pt;
 }
 
-acronym, .titleTip {
-  border-bottom: 1px dotted rgb(168,140,83);
+acronym,
+.titleTip {
+  border-bottom: 1px dotted rgb(168, 140, 83);
   cursor: help;
   margin: 0;
   padding: 0;
@@ -31,18 +31,16 @@ acronym, .titleTip {
   display: none !important;
 }
 
-
 .smallCaps {
   font-size: 117%;
   font-variant: small-caps;
 }
 
-
 /* ##### Header ##### */
 
 #header {
   color: inherit;
-  background-color: rgb(184,38,25);
+  background-color: rgb(184, 38, 25);
 }
 
 .headerTitle {
@@ -54,13 +52,13 @@ acronym, .titleTip {
   color: black;
   background-color: transparent;
   text-decoration: none;
-  font-size: 110%;  /* For MSIE */
+  font-size: 110%; /* For MSIE */
   font-weight: bold;
   font-style: italic;
 }
 
 .headerTitle > a {
-  font-size: 138%;  /* For fully standards-compliant user agents */
+  font-size: 138%; /* For fully standards-compliant user agents */
 }
 
 .headerTitle span {
@@ -92,7 +90,6 @@ acronym, .titleTip {
   background-color: white;
 }
 
-
 /* ##### Left Side Bar ##### */
 
 .leftSideBar {
@@ -102,8 +99,8 @@ acronym, .titleTip {
 }
 
 .leftSideBar .sideBarTitle {
-  color: rgb(64,64,64);
-  background-color: rgb(230,223,207);
+  color: rgb(64, 64, 64);
+  background-color: rgb(230, 223, 207);
   font-weight: bold;
   margin: 0;
   padding: 0.8ex 1ex;
@@ -122,19 +119,19 @@ acronym, .titleTip {
 }
 
 .leftSideBar a {
-  color: rgb(166,140,83);
+  color: rgb(166, 140, 83);
   background-color: transparent;
   text-decoration: none;
 }
 
 .leftSideBar a:hover {
-  color: rgb(64,64,64);
+  color: rgb(64, 64, 64);
   background-color: transparent;
   text-decoration: none;
 }
 
 .leftSideBar .sideBarText {
-  color: rgb(166,140,83);
+  color: rgb(166, 140, 83);
   background-color: transparent;
   line-height: 1.25em;
   margin: 1ex 0.25ex 1.5em 0.75ex;
@@ -151,11 +148,10 @@ acronym, .titleTip {
 }
 
 .leftSideBar .thisPage {
-  color: rgb(64,64,64);
+  color: rgb(64, 64, 64);
   background-color: transparent;
   font-weight: bold;
 }
-
 
 /* ##### Right Side Bar ##### */
 
@@ -165,7 +161,7 @@ acronym, .titleTip {
   padding: 0;
   float: right;
   clear: right;
-  border: 1px solid rgb(216,210,195);
+  border: 1px solid rgb(216, 210, 195);
 }
 
 [class~="rightSideBar"] {
@@ -174,14 +170,14 @@ acronym, .titleTip {
 
 .rightSideBar .sideBarTitle {
   color: black;
-  background-color: rgb(230,223,207);
+  background-color: rgb(230, 223, 207);
   font-weight: bold;
   margin: 1.25ex 1ex;
   padding: 0.9ex 1ex;
 }
 
 .rightSideBar a {
-  color: rgb(166,140,83);
+  color: rgb(166, 140, 83);
   background-color: transparent;
   text-decoration: underline;
   font-weight: bold;
@@ -209,7 +205,6 @@ acronym, .titleTip {
   text-decoration: underline;
 }
 
-
 /* ##### Main Copy ##### */
 
 #main-copy {
@@ -219,11 +214,11 @@ acronym, .titleTip {
   line-height: 1.5em;
   margin: 0 0 0 12.5em;
   padding: 0.5ex 15em 1em 1em;
-  border-left: 1px solid rgb(216,210,195);
+  border-left: 1px solid rgb(216, 210, 195);
 }
 
 #main-copy h1 {
-  color: rgb(166,140,83);
+  color: rgb(166, 140, 83);
   background-color: transparent;
   font-family: arial, verdana, helvetica, sans-serif;
   font-size: 175%;
@@ -232,11 +227,11 @@ acronym, .titleTip {
   text-align: left;
   margin: 1em 0 0 0;
   padding: 1em 0 0 0;
-  border-top: 1px solid rgb(216,210,195);
+  border-top: 1px solid rgb(216, 210, 195);
 }
 
 #main-copy a {
-  color: rgb(168,140,83);
+  color: rgb(168, 140, 83);
   background-color: transparent;
   text-decoration: underline;
 }
@@ -261,12 +256,11 @@ dd {
   padding: 0;
 }
 
-
 /* ##### Footer ##### */
 
 #footer {
   color: black;
-  background-color: rgb(230,223,207);
+  background-color: rgb(230, 223, 207);
   font-size: 92%;
   text-align: center;
   line-height: 1.25em;
