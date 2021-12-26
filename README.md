@@ -1,8 +1,12 @@
 # Blog Templates
 
+<div align="center">
+
 ![Img](./blog-templates.png)
 
 
+ </div>
+ 
 1. - [ ] [./full-page-video-carousel/index.html](./full-page-video-carousel/index.html)
 1. - [ ] [./sidebar-blog/left-sidebar.html](./sidebar-blog/left-sidebar.html)
 2. - [ ] [/sidebar-blog/index.html](./sidebar-blog/index.html)
