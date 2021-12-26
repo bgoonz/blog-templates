@@ -2,7 +2,6 @@
 // Forms
 // --------------------------------------------------
 
-
 // Normalize non-controls
 //
 // Restyle and baseline non-control form elements.
@@ -35,7 +34,6 @@ label {
   margin-bottom: 5px;
   font-weight: bold;
 }
-
 
 // Normalize form controls
 //
@@ -89,7 +87,6 @@ output {
   color: @input-color;
 }
 
-
 // Common form controls
 //
 // Shared size and type resets for form controls. Apply `.form-control` to any
@@ -124,7 +121,7 @@ output {
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid @input-border;
   border-radius: @input-border-radius;
-  .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+  .box-shadow(inset 0 1px 1px rgba(0,0,0,0.075));
   .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
 
   // Customize the `:focus` state to imitate native WebKit styles.
@@ -152,7 +149,6 @@ output {
   }
 }
 
-
 // Search inputs in iOS
 //
 // This overrides the extra rounded corners on search inputs in iOS so that our
@@ -163,7 +159,6 @@ output {
 input[type="search"] {
   -webkit-appearance: none;
 }
-
 
 // Special styles for iOS temporal inputs
 //
@@ -189,7 +184,6 @@ input[type="month"] {
   }
 }
 
-
 // Form groups
 //
 // Designed to help with the organization and spacing of vertical forms. For
@@ -198,7 +192,6 @@ input[type="month"] {
 .form-group {
   margin-bottom: 15px;
 }
-
 
 // Checkboxes and radios
 //
@@ -280,7 +273,6 @@ input[type="checkbox"] {
   }
 }
 
-
 // Static form control text
 //
 // Apply class to a `p` element to make any string of text align with labels in
@@ -300,7 +292,6 @@ input[type="checkbox"] {
   }
 }
 
-
 // Form control sizing
 //
 // Build on `.form-control` with modifier classes to decrease or increase the
@@ -313,7 +304,6 @@ input[type="checkbox"] {
 .input-lg {
   .input-size(@input-height-large; @padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
 }
-
 
 // Form control feedback states
 //
@@ -362,12 +352,10 @@ input[type="checkbox"] {
   .form-control-validation(@state-danger-text; @state-danger-text; @state-danger-bg);
 }
 
-
 // Reposition feedback icon if label is hidden with "screenreader only" state
 .has-feedback label.sr-only ~ .form-control-feedback {
   top: 0;
 }
-
 
 // Help text
 //
@@ -381,8 +369,6 @@ input[type="checkbox"] {
   color: lighten(@text-color, 25%); // lighten the text some for contrast
 }
 
-
-
 // Inline forms
 //
 // Make forms appear inline(-block) by adding the `.form-inline` class. Inline
@@ -395,7 +381,6 @@ input[type="checkbox"] {
 // Heads up! This is mixin-ed into `.navbar-form` in navbars.less.
 
 .form-inline {
-
   // Kick in the inline
   @media (min-width: @screen-sm-min) {
     // Inline-block all the things for "inline"
@@ -463,14 +448,12 @@ input[type="checkbox"] {
   }
 }
 
-
 // Horizontal forms
 //
 // Horizontal forms are built on grid classes and allow you to create forms with
 // labels on the left and inputs on the right.
 
 .form-horizontal {
-
   // Consistent vertical alignment of radios and checkboxes
   //
   // Labels also get some reset styles, but that is scoped to a media query below.
@@ -500,7 +483,9 @@ input[type="checkbox"] {
     .control-label {
       text-align: right;
       margin-bottom: 0;
-      padding-top: (@padding-base-vertical + 1); // Default padding plus a border
+      padding-top: (
+        @padding-base-vertical + 1
+      ); // Default padding plus a border
     }
   }
 

@@ -1,6 +1,7 @@
 /* Preload images */
 body:after {
-  content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
+  content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png)
+    url(../img/next.png);
   display: none;
 }
 
@@ -97,10 +98,11 @@ body:after {
 
 .lb-nav a {
   outline: none;
-  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+  background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
 }
 
-.lb-prev, .lb-next {
+.lb-prev,
+.lb-next {
   height: 100%;
   cursor: pointer;
   display: block;

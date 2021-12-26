@@ -5,38 +5,36 @@
   COPYRIGHT: none
  ***************************************************/
 
-
 /***************************************************
    HTML Element Styles
  ***************************************************/
 
 body {
-  margin: 0;  
+  margin: 0;
   text-align: center;
-  font: 0.62em verdana, arial, sans-serif;  
+  font: 0.62em verdana, arial, sans-serif;
   line-height: 170%;
-  color: #EEE;
+  color: #eee;
   background: #585858 url(../images/bg_body.jpg) repeat-y top center;
 }
 
-p { 
+p {
   padding-top: 10px !important;
   padding-top: 3px;
   padding-bottom: 10px !important;
   padding-bottom: 3px;
 }
 
-
 a {
-  color: #86E160;
+  color: #86e160;
 }
 
 a:visited {
-  color: #AAA;
+  color: #aaa;
 }
 
 a:hover {
-  color: #FFF;
+  color: #fff;
 }
 
 acronym {
@@ -69,7 +67,7 @@ textarea {
   padding: 1px 3px;
   margin: 5px 0;
   font: 1em verdana, arial, sans-serif;
-  color: #EEE;
+  color: #eee;
   background-color: #777;
   border: 1px solid #999;
 }
@@ -78,18 +76,17 @@ input:hover,
 input:focus,
 textarea:hover,
 textarea:focus {
-  color: #FFF;
+  color: #fff;
   background-color: #999;
-  border: 1px solid #EEE;
+  border: 1px solid #eee;
 }
-
 
 h1 {
   clear: both;
   margin: 10px 0;
   font: 700 1em verdana, sans-serif;
   text-transform: uppercase;
-  color: #7BD32C;
+  color: #7bd32c;
   background: #686868 url(../images/rounded_tr.gif) no-repeat top right;
 }
 
@@ -110,13 +107,12 @@ h1 span {
   background: url(../images/rounded_bl.gif) no-repeat bottom left;
 }
 
-
-#content ol li { 
-  color: #9BE4FF;
+#content ol li {
+  color: #9be4ff;
 }
 
 #content ol li span {
-  color: #EEE;
+  color: #eee;
 }
 
 #content ul {
@@ -127,10 +123,10 @@ h1 span {
   list-style-image: url(../images/li_bullet.gif);
 }
 
-blockquote {  
+blockquote {
   margin: 0;
   background: #686868 url(../images/rounded_tr.gif) no-repeat top right;
-} 
+}
 
 blockquote span {
   display: block;
@@ -142,11 +138,10 @@ blockquote span {
   Layout Element Styles
  ***************************************************/
 
-
-#header {  
+#header {
   width: 100%;
   height: 3em;
-  background: #585858 url(../images/bg_header.jpg) repeat-y top center;  
+  background: #585858 url(../images/bg_header.jpg) repeat-y top center;
 }
 
 /***************************************************
@@ -156,20 +151,20 @@ blockquote span {
 #menu {
   width: 767px;
   margin: 0 auto;
-  text-align: left;  
+  text-align: left;
 }
 
 #menu ul {
   margin: 0;
   padding: 0;
-  line-height: normal;  
+  line-height: normal;
 }
 
 #menu ul li {
   width: 8em;
   display: inline;
   float: left;
-  padding-top: 0.8em;  
+  padding-top: 0.8em;
   list-style: none;
   text-align: center;
 }
@@ -178,7 +173,7 @@ blockquote span {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  padding-bottom: 1.0em;
+  padding-bottom: 1em;
   color: #222;
 }
 
@@ -188,7 +183,6 @@ blockquote span {
   color: #111;
   background: url(../images/menu_tab.gif) no-repeat bottom center;
 }
-
 
 /***************************************************
   Site Title
@@ -203,11 +197,10 @@ blockquote span {
 
 #title h1 {
   display: inline;
-  color:  #222;
-  background-color: #86E160;
+  color: #222;
+  background-color: #86e160;
   background-image: none;
 }
-
 
 /***************************************************
  Page Content
@@ -217,8 +210,7 @@ blockquote span {
  3. Right side bar 
  ***************************************************/
 
-
-#content {  
+#content {
   clear: both;
   width: 767px;
   margin: 0 auto;
@@ -235,7 +227,7 @@ blockquote span {
 
 #image {
   float: left;
-  width: 170px;  
+  width: 170px;
   vertical-align: top;
 }
 
@@ -246,7 +238,6 @@ blockquote span {
   padding: 10px 15px 20px 0 !important;
   padding: 20px 15px 20px 0;
 }
-
 
 /***************************************************
  Sidemenu Styles
@@ -260,7 +251,7 @@ blockquote span {
   display: block;
   text-align: right;
   text-decoration: none;
-  margin-bottom: 1px;  
+  margin-bottom: 1px;
 }
 
 .sideMenu a span {
@@ -298,15 +289,15 @@ blockquote span {
 }
 
 #comments a {
-  color: #7BD32C;
+  color: #7bd32c;
 }
 
 #comments a:visited {
-  color: #AAA;
+  color: #aaa;
 }
 
 #comments a:hover {
-  color: #FFF;
+  color: #fff;
 }
 
 /***************************************************
@@ -331,21 +322,20 @@ blockquote span {
 }
 
 #footer a:hover {
-  color: #EEE;
+  color: #eee;
 }
 
 a.fullAhead {
   float: left;
   width: 30px;
-  height: 34px;  
+  height: 34px;
   margin-right: 10px;
   background: url(../images/logo_fullahead.gif) no-repeat 0 0;
 }
 
-a:hover.fullAhead  {
+a:hover.fullAhead {
   background-position: -30px 0;
 }
-
 
 /***************************************************
  Generic Display Classes

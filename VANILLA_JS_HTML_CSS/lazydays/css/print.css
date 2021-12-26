@@ -8,7 +8,7 @@
 body {
   font: 400 12pt verdana, arial, sans-serif;
   color: #000;
-  background: #FFF;
+  background: #fff;
 }
 
 h1 {
@@ -25,7 +25,9 @@ h3 {
   font-size: 14pt;
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   font-size: 12pt;
 }
 
@@ -34,16 +36,15 @@ acronym {
 }
 
 a {
-  color: #00F;
+  color: #00f;
 }
 
 /* Prints the URL after a link in CSS2 supporting browsers */
-a:link:after, 
+a:link:after,
 a:visited:after {
-   content: " (" attr(href) ") ";
-   font-size: 90%;
+  content: " (" attr(href) ") ";
+  font-size: 90%;
 }
-
 
 /* Don't display these elements since they're not useful on paper */
 #header,
@@ -58,6 +59,3 @@ a:visited:after {
   margin: 0 8%;
   padding: 0;
 }
-
-
-
