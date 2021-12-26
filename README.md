@@ -1,10 +1,11 @@
 # Blog Templates
 
 <div align="center">
+<center>
 
 ![Img](./blog-templates.png)
 
-
+ </center>
  </div>
  
 1. - [ ] [./full-page-video-carousel/index.html](./full-page-video-carousel/index.html)
